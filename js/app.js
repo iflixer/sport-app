@@ -101,4 +101,11 @@ $(document).ready(function () {
         $(this).next('.gamecontent').slideToggle();
     });
 
+    $(document).on('click', '.better-rates', function () {
+        $('.betters-fullinfo').addClass('active');
+    });
+    $(document).on('click', '.goback', function () {
+        $('.betters-fullinfo').removeClass('active');
+    });
+
 });

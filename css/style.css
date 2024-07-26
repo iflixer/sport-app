@@ -4,7 +4,8 @@
     --bg: #fff;
     --bg-dark: #1a212a;
     --li-dark: #2c323a;
-    --lila-dark: #4b5370;
+    --lila-dark: #33437b;
+    --main-green:#49b356;
 }
 
 body {
@@ -33,7 +34,8 @@ body.dark-mode {
     padding: 0 8px;
     background-color: #fff;
     min-height: 100vh;
-    color: #121
+    color: #121;
+    position: relative;
 }
 
 .dark-mode .maincontainer {
@@ -149,11 +151,10 @@ a {
 
 .menu {
     display: inline-flex; /* Ensure menu items stay in a single row */
-    padding: 0;
     list-style-type: none;
     margin: 0;
     align-items: center;
-    padding-bottom: 20px;
+    padding: 0 0 20px;
 }
 
 .activeevents {
@@ -245,7 +246,7 @@ a {
     left: 0;
     width: 100%;
     background-color: #fff;
-    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-out;
     transform: translateY(101%);
     border-top-left-radius: 16px;
@@ -297,7 +298,7 @@ body.hasover .overlay {
     color: #fff;
     background-color: var(--lila-dark);
     font-weight: 600;
-    font-size: 13px;
+    font-size: 12px;
     cursor: pointer
 }
 
@@ -366,8 +367,8 @@ body.hasover .overlay {
     border-radius: 20px;
     color: #fff;
     background-color: var(--lila-dark);
-    font-weight: 600;
-    font-size: 12px;
+    font-weight: 500;
+    font-size: 11px;
     height: 34px;
     display: flex;
     align-items: center;
@@ -446,6 +447,9 @@ body.hasover .overlay {
     display: flex;
     justify-content: space-between;
     padding: 0;
+    background-color: #a5bad7;
+}
+.dark-mode .upcomebut.full.active {
     background-color: var(--li-dark)
 }
 
@@ -501,7 +505,7 @@ body.hasover .overlay {
     margin-right: 8px;
     border-radius: 16px;
     height: 28px;
-    padding: 4px 8px;
+    padding: 4px 6px;
     background-color: var(--lila-dark);
     display: flex;
     align-items: center;
@@ -557,3 +561,74 @@ body.hasover .overlay {
     display: none;
     padding: 10px;
 }
+.gamebadges{display: flex;justify-content: center;align-items: center;margin-bottom:20px;}
+.gamebadges .badge{height:20px;margin:2px;font-size:12px;text-transform: uppercase;padding:2px 6px;}
+.badge.live{background-color:#362631;color:#ff4e64}
+.game-stat{display: flex;align-items: center;justify-content:space-between}
+.game-stat .team{width:40%;font-size:13px;text-align: center;font-weight:600;}
+.game-stat .results{width:16%;display: flex;justify-content: center;color:var(--main-green);font-size:18px;font-weight:600;letter-spacing: 3px}
+
+.better-rates{display: flex;justify-content: center;flex-wrap:wrap;margin-top:20px;}
+.betterhead{width:100%;text-align:center;position: relative;margin-bottom:15px;}
+.betterhead span{padding:0 8px;background-color: #fff; color:#121;z-index:1;display:inline-block;position: relative; font-size:12px;letter-spacing:1.5px}
+.dark-mode .betterhead span{background-color: var(--bg-dark);color:#fff}
+.betterhead:before{display:block;width:100%;content:"";height:1px;background:var(--bg-dark);opacity:0.3;position:absolute;top:12px;z-index:0}
+.dark-mode .betterhead:before{background:#fff;}
+
+.ratebadge {
+    margin-right: 8px;
+    border-radius: 16px;
+    background-color: var(--lila-dark);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    color: #fff;
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+    padding:8px 6px 10px;
+}
+.ratebadge p{
+    color:var(--main-green);
+    font-weight: 500;
+    font-size:10px;
+}
+.ratebadge p.rate{
+    font-weight: 500;
+    font-size:15px;
+    margin-top:6px;
+    color:#fff;
+}
+
+.dark-mode .ratebadge{
+    background-color: var(--li-dark);
+}
+
+.betters-fullinfo{position:absolute;width:100%;
+   height:100vh;display:block;background-color: #fff;z-index:10;top:0;left:0;
+    transition: all 0.3s ease-in-out;color:var(--bg-dark);
+    padding:10px 12px;
+    overflow: auto;
+    transform: translateX(101vw);
+    opacity:0;
+}
+.dark-mode .betters-fullinfo{background-color: var(--bg-dark);color:#fff}
+.betters-fullinfo.active{transform: translateX(0);
+    opacity:1;
+}
+.betters-fullinfo h3{font-size:16px;font-weight: 600;
+}
+.betters-fullinfo i{font-weight:600;margin-right:10px;}
+.betters-fullinfo .spoiler{padding:0 20px;height:48px;border:0}
+.betters-fullinfo .gamerow{border-top:1px solid var(--bg-dark);padding-bottom:0;margin-bottom:0;}
+.dark-mode .betters-fullinfo .gamerow{border-top:1px solid rgba(255,255,255,0.3);}
+.betters-fullinfo .gamerow .better-rates{margin-top:0;}
+.betters-fullinfo .gamerow .gamecontent{padding-bottom:30px;}
+.betters-fullinfo .gamerow .gamecontent .t2c .ratebadge{min-width:46%;width:auto; margin-bottom:10px;}
+.betters-fullinfo .teamscore{display: flex;align-items: center;justify-content: space-between}
+.betters-fullinfo .teamscore h4{padding:5px;margin:0}
+.betters-fullinfo .gamebadges{justify-content: flex-start;margin-top:20px;}
+.betters-fullinfo .gamebadges .badge{height:32px;padding:4px 10px;font-weight:600}
+i.badgecounter{background-color:var(--bg-dark);margin-left:10px;border-radius:20px;font-size:10px;padding:4px;font-family: "Montserrat", sans-serif;font-weight:600;font-variant: normal;text-transform: none;margin-right:0;min-width:12px;text-align: center}
+.green{color:var(--main-green)}
