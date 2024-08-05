@@ -104,6 +104,15 @@ $(document).ready(function () {
     $(document).on('click', '.better-rates', function () {
         $('.betters-fullinfo').addClass('active');
     });
+
+
+
+    $(document).on('click', '.gameheader.spoiler.singlebetter', function () {
+        $(this).toggleClass('active');
+    });
+
+
+
     $(document).on('click', '.goback', function () {
         $('.betters-fullinfo').removeClass('active');
     });

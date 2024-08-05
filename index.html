@@ -55,7 +55,7 @@
 
     <div class="selectors-line">
         <div id="betters">
-            <div class="main-bet-but">Markets <i class="fas fa-chevron-down"></i></div>
+            <div class="main-bet-but">Betters <i class="fas fa-chevron-down"></i></div>
             <div class="main-bet-options slidefrombot">
                 <div class="slidefrombot-header">Betters</div>
                 <div class="radio-group">
@@ -64,16 +64,16 @@
                         <input type="radio" name="betoption" value="all" checked>
                     </label>
                     <label>
-                        <span>1x2</span>
-                        <input type="radio" name="betoption" value="1x2">
+                        <span>1Xbet</span>
+                        <input type="radio" name="betoption" value="1xBet">
                     </label>
                     <label>
-                        <span>Total</span>
-                        <input type="radio" name="betoption" value="Total">
+                        <span>Betwinner</span>
+                        <input type="radio" name="betoption" value="Betwinner">
                     </label>
                     <label>
-                        <span>Handicap</span>
-                        <input type="radio" name="betoption" value="Handicap">
+                        <span>Bet365</span>
+                        <input type="radio" name="betoption" value="bet365">
                     </label>
                 </div>
 
@@ -115,25 +115,400 @@
                         <div class="results">2:1</div>
                         <div class="team tguest">Morenton Bay United FC</div>
                     </div>
-                    <div class="betters-info">
-                        <div class="better-rates" data-better="1x2">
-                            <div class="betterhead"><span>1x2</span></div>
-                            <div class="ratebadge"><p>Brisbone City FC</p><p class="rate">1.92</p></div>
-                            <div class="ratebadge"><p>Draw</p><p class="rate">3.65</p></div>
-                            <div class="ratebadge"><p>Morenton Bay United FC</p><p class="rate">3.5</p></div>
-                        </div>
-                        <div class="better-rates" data-better="Total">
-                            <div class="betterhead"><span>ASIAN TOTAL</span></div>
-                            <div class="ratebadge"><p>Over 5</p><p class="rate">1.89</p></div>
-                            <div class="ratebadge"><p>Under 5</p><p class="rate">1.78</p></div>
-                        </div>
-                        <div class="better-rates" data-better="Handicap">
-                            <div class="better-rates" data-better="Handicap">
-                                <div class="betterhead"><span>ASIAN HANDICAP 2-0</span></div>
-                                <div class="ratebadge"><p>Brisbone City FC (+0.5)</p><p class="rate">1.92</p></div>
-                                <div class="ratebadge"><p>Morenton Bay United FC (-0.5)</p><p class="rate">3.5</p></div>
+                    <div class="gameheader spoiler singlebetter active">
+                        <span><img src="img/1xbet.png"></span>1xBet
+                    </div>
+                    <div class="gamecontent" style="display: block">
+                        <div class="betters-info">
+                            <div class="better-rates" data-better="1x2">
+                                <div class="betterhead"><span>1x2</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="1x2extra">
+                                <div class="betterhead"><span>1x2 Extra Time</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="1x2 Extra Time (1st Half)">
+                                <div class="betterhead"><span>1x2 Extra Time (1st Half)</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="1x2 - 10 minutes">
+                                <div class="betterhead"><span>1x2 - 10 minutes</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="1x2 - 20 minutes">
+                                <div class="betterhead"><span>1x2 - 20 minutes</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="1x2 - 30 minutes">
+                                <div class="betterhead"><span>1x2 - 30 minutes</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="1x2 - 40 minutes">
+                                <div class="betterhead"><span>1x2 - 40 minutes</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="1x2 - 50 minutes">
+                                <div class="betterhead"><span>1x2 - 50 minutes</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="1x2 - 60 minutes">
+                                <div class="betterhead"><span>1x2 - 60 minutes</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="1x2 - 70 minutes">
+                                <div class="betterhead"><span>1x2 - 70 minutes</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="1x2 - 80 minutes">
+                                <div class="betterhead"><span>1x2 - 80 minutes</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="Double Chance">
+                                <div class="betterhead"><span>Double Chance</span></div>
+                                <div class="ratebadge"><p>Over 5</p>
+                                    <p class="rate">1.89</p></div>
+                                <div class="ratebadge"><p>Under 5</p>
+                                    <p class="rate">1.78</p></div>
+                            </div>
+
+                            <div class="better-rates" data-better="Draw No Bet">
+                                <div class="betterhead"><span>Draw No Bet</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC (+0.5)</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC (-0.5)</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="Fulltime Result">
+                                <div class="betterhead"><span>Fulltime Result</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
                             </div>
                         </div>
+
+                    </div>
+
+                    <div class="gameheader spoiler singlebetter">
+                        <span><img src="img/betwinner-logo.png"></span>BetWinner
+                    </div>
+                    <div class="gamecontent" style="display: none">
+                        <div class="betters-info">
+                            <div class="better-rates" data-better="1x2">
+                                <div class="betterhead"><span>1x2</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="1x2extra">
+                                <div class="betterhead"><span>1x2 Extra Time</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="1x2 Extra Time (1st Half)">
+                                <div class="betterhead"><span>1x2 Extra Time (1st Half)</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="1x2 - 10 minutes">
+                                <div class="betterhead"><span>1x2 - 10 minutes</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="1x2 - 20 minutes">
+                                <div class="betterhead"><span>1x2 - 20 minutes</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="1x2 - 30 minutes">
+                                <div class="betterhead"><span>1x2 - 30 minutes</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="1x2 - 40 minutes">
+                                <div class="betterhead"><span>1x2 - 40 minutes</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="1x2 - 50 minutes">
+                                <div class="betterhead"><span>1x2 - 50 minutes</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="1x2 - 60 minutes">
+                                <div class="betterhead"><span>1x2 - 60 minutes</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="1x2 - 70 minutes">
+                                <div class="betterhead"><span>1x2 - 70 minutes</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="1x2 - 80 minutes">
+                                <div class="betterhead"><span>1x2 - 80 minutes</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="Double Chance">
+                                <div class="betterhead"><span>Double Chance</span></div>
+                                <div class="ratebadge"><p>Over 5</p>
+                                    <p class="rate">1.89</p></div>
+                                <div class="ratebadge"><p>Under 5</p>
+                                    <p class="rate">1.78</p></div>
+                            </div>
+
+                            <div class="better-rates" data-better="Draw No Bet">
+                                <div class="betterhead"><span>Draw No Bet</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC (+0.5)</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC (-0.5)</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="Fulltime Result">
+                                <div class="betterhead"><span>Fulltime Result</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="gameheader spoiler singlebetter">
+                        <span><img src="img/Bet365-Logo.png"></span>Bet 365
+                    </div>
+                    <div class="gamecontent" style="display: none">
+                        <div class="betters-info">
+                            <div class="better-rates" data-better="1x2">
+                                <div class="betterhead"><span>1x2</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="1x2extra">
+                                <div class="betterhead"><span>1x2 Extra Time</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="1x2 Extra Time (1st Half)">
+                                <div class="betterhead"><span>1x2 Extra Time (1st Half)</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="1x2 - 10 minutes">
+                                <div class="betterhead"><span>1x2 - 10 minutes</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="1x2 - 20 minutes">
+                                <div class="betterhead"><span>1x2 - 20 minutes</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="1x2 - 30 minutes">
+                                <div class="betterhead"><span>1x2 - 30 minutes</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="1x2 - 40 minutes">
+                                <div class="betterhead"><span>1x2 - 40 minutes</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="1x2 - 50 minutes">
+                                <div class="betterhead"><span>1x2 - 50 minutes</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="1x2 - 60 minutes">
+                                <div class="betterhead"><span>1x2 - 60 minutes</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="1x2 - 70 minutes">
+                                <div class="betterhead"><span>1x2 - 70 minutes</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="1x2 - 80 minutes">
+                                <div class="betterhead"><span>1x2 - 80 minutes</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="Double Chance">
+                                <div class="betterhead"><span>Double Chance</span></div>
+                                <div class="ratebadge"><p>Over 5</p>
+                                    <p class="rate">1.89</p></div>
+                                <div class="ratebadge"><p>Under 5</p>
+                                    <p class="rate">1.78</p></div>
+                            </div>
+
+                            <div class="better-rates" data-better="Draw No Bet">
+                                <div class="betterhead"><span>Draw No Bet</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC (+0.5)</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC (-0.5)</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                            <div class="better-rates" data-better="Fulltime Result">
+                                <div class="betterhead"><span>Fulltime Result</span></div>
+                                <div class="ratebadge"><p>Brisbone City FC</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Draw</p>
+                                    <p class="rate">3.65</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                    <p class="rate">3.5</p></div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -159,20 +534,27 @@
                     <div class="betters-info">
                         <div class="better-rates" data-better="1x2">
                             <div class="betterhead"><span>1x2</span></div>
-                            <div class="ratebadge"><p>Brisbone City FC</p><p class="rate">1.92</p></div>
-                            <div class="ratebadge"><p>Draw</p><p class="rate">3.65</p></div>
-                            <div class="ratebadge"><p>Morenton Bay United FC</p><p class="rate">3.5</p></div>
+                            <div class="ratebadge"><p>Brisbone City FC</p>
+                                <p class="rate">1.92</p></div>
+                            <div class="ratebadge"><p>Draw</p>
+                                <p class="rate">3.65</p></div>
+                            <div class="ratebadge"><p>Morenton Bay United FC</p>
+                                <p class="rate">3.5</p></div>
                         </div>
                         <div class="better-rates" data-better="Total">
                             <div class="betterhead"><span>ASIAN TOTAL</span></div>
-                            <div class="ratebadge"><p>Over 5</p><p class="rate">1.89</p></div>
-                            <div class="ratebadge"><p>Under 5</p><p class="rate">1.78</p></div>
+                            <div class="ratebadge"><p>Over 5</p>
+                                <p class="rate">1.89</p></div>
+                            <div class="ratebadge"><p>Under 5</p>
+                                <p class="rate">1.78</p></div>
                         </div>
                         <div class="better-rates" data-better="Handicap">
                             <div class="better-rates" data-better="Handicap">
                                 <div class="betterhead"><span>ASIAN HANDICAP 2-0</span></div>
-                                <div class="ratebadge"><p>Brisbone City FC (+0.5)</p><p class="rate">1.92</p></div>
-                                <div class="ratebadge"><p>Morenton Bay United FC (-0.5)</p><p class="rate">3.5</p></div>
+                                <div class="ratebadge"><p>Brisbone City FC (+0.5)</p>
+                                    <p class="rate">1.92</p></div>
+                                <div class="ratebadge"><p>Morenton Bay United FC (-0.5)</p>
+                                    <p class="rate">3.5</p></div>
                             </div>
                         </div>
                     </div>
@@ -203,49 +585,73 @@
                 </div>
                 <div class="gamecontent" style="display: block">
                     <div class="better-rates" data-better="1x2">
-                      <div class="ratebadge"><p>Brisbone City FC</p><p class="rate">1.92</p></div>
-                    <div class="ratebadge"><p>Draw</p><p class="rate">3.65</p></div>
-                    <div class="ratebadge"><p>Morenton Bay United FC</p><p class="rate">3.5</p></div>
-                </div></div>
+                        <div class="ratebadge"><p>Brisbone City FC</p>
+                            <p class="rate">1.92</p></div>
+                        <div class="ratebadge"><p>Draw</p>
+                            <p class="rate">3.65</p></div>
+                        <div class="ratebadge"><p>Morenton Bay United FC</p>
+                            <p class="rate">3.5</p></div>
+                    </div>
+                </div>
             </div>
             <div class="gamerow">
                 <div class="gameheader spoiler"><h3>Asian total</h3>
                 </div>
                 <div class="gamecontent">
                     <div class="better-rates" data-better="total">
-                        <div class="ratebadge"><p>Brisbone City FC</p><p class="rate">1.92</p></div>
-                        <div class="ratebadge"><p>Morenton Bay United FC</p><p class="rate">3.5</p></div>
-                    </div></div>
+                        <div class="ratebadge"><p>Brisbone City FC</p>
+                            <p class="rate">1.92</p></div>
+                        <div class="ratebadge"><p>Morenton Bay United FC</p>
+                            <p class="rate">3.5</p></div>
+                    </div>
+                </div>
             </div>
             <div class="gamerow">
                 <div class="gameheader spoiler"><h3>Handicap</h3>
                 </div>
                 <div class="gamecontent">
                     <div class="better-rates  t2c" data-better="Handicap">
-                        <div class="ratebadge"><p>Brisbone City FC</p><p class="rate">1.92</p></div>
-                        <div class="ratebadge"><p>Morenton Bay United FC</p><p class="rate">3.5</p></div>
-                        <div class="ratebadge"><p>Brisbone City FC</p><p class="rate">1.92</p></div>
-                        <div class="ratebadge"><p>Morenton Bay United FC</p><p class="rate">3.5</p></div>
-                        <div class="ratebadge"><p>Brisbone City FC</p><p class="rate">1.92</p></div>
-                        <div class="ratebadge"><p>Morenton Bay United FC</p><p class="rate">3.5</p></div>
-                        <div class="ratebadge"><p>Brisbone City FC</p><p class="rate">1.92</p></div>
-                        <div class="ratebadge"><p>Morenton Bay United FC</p><p class="rate">3.5</p></div>
-                    </div></div>
+                        <div class="ratebadge"><p>Brisbone City FC</p>
+                            <p class="rate">1.92</p></div>
+                        <div class="ratebadge"><p>Morenton Bay United FC</p>
+                            <p class="rate">3.5</p></div>
+                        <div class="ratebadge"><p>Brisbone City FC</p>
+                            <p class="rate">1.92</p></div>
+                        <div class="ratebadge"><p>Morenton Bay United FC</p>
+                            <p class="rate">3.5</p></div>
+                        <div class="ratebadge"><p>Brisbone City FC</p>
+                            <p class="rate">1.92</p></div>
+                        <div class="ratebadge"><p>Morenton Bay United FC</p>
+                            <p class="rate">3.5</p></div>
+                        <div class="ratebadge"><p>Brisbone City FC</p>
+                            <p class="rate">1.92</p></div>
+                        <div class="ratebadge"><p>Morenton Bay United FC</p>
+                            <p class="rate">3.5</p></div>
+                    </div>
+                </div>
             </div>
             <div class="gamerow">
                 <div class="gameheader spoiler"><h3>Correct score</h3>
                 </div>
                 <div class="gamecontent">
                     <div class="better-rates  t2c" data-better="Handicap">
-                        <div class="ratebadge"><p>2:1</p><p class="rate">48.0</p></div>
-                        <div class="ratebadge"><p>1:1</p><p class="rate">7.8</p></div>
-                        <div class="ratebadge"><p>0:1</p><p class="rate">1.5</p></div>
-                        <div class="ratebadge"><p>2:2</p><p class="rate">80.0</p></div>
-                        <div class="ratebadge"><p>0:2</p><p class="rate">4.3</p></div>
-                        <div class="ratebadge"><p>1:2</p><p class="rate">19.2</p></div>
-                        <div class="ratebadge"><p>0:3</p><p class="rate">26.4</p></div>
+                        <div class="ratebadge"><p>2:1</p>
+                            <p class="rate">48.0</p></div>
+                        <div class="ratebadge"><p>1:1</p>
+                            <p class="rate">7.8</p></div>
+                        <div class="ratebadge"><p>0:1</p>
+                            <p class="rate">1.5</p></div>
+                        <div class="ratebadge"><p>2:2</p>
+                            <p class="rate">80.0</p></div>
+                        <div class="ratebadge"><p>0:2</p>
+                            <p class="rate">4.3</p></div>
+                        <div class="ratebadge"><p>1:2</p>
+                            <p class="rate">19.2</p></div>
+                        <div class="ratebadge"><p>0:3</p>
+                            <p class="rate">26.4</p></div>
 
-                    </div></div>
+                    </div>
+                </div>
             </div>
 
         </div>
