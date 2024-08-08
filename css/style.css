@@ -559,7 +559,7 @@ body.hasover .overlay {
 
 .gamecontent {
     display: none;
-    padding: 10px;
+    padding: 10px 0;
 }
 .gamebadges{display: flex;justify-content: center;align-items: center;margin-bottom:20px;}
 .gamebadges .badge{height:20px;margin:2px;font-size:12px;text-transform: uppercase;padding:2px 6px;}
@@ -568,7 +568,7 @@ body.hasover .overlay {
 .game-stat .team{width:40%;font-size:13px;text-align: center;font-weight:600;}
 .game-stat .results{width:16%;display: flex;justify-content: center;color:var(--main-green);font-size:18px;font-weight:600;letter-spacing: 3px}
 
-.better-rates{display: flex;justify-content: center;flex-wrap:wrap;margin-top:20px;}
+.better-rates{display: flex;justify-content: center;flex-wrap:wrap;margin-top:10px;}
 .betterhead{width:100%;text-align:center;position: relative;margin-bottom:15px;}
 .betterhead span{padding:0 8px;background-color: #fff; color:#121;z-index:1;display:inline-block;position: relative; font-size:12px;letter-spacing:1.5px}
 .dark-mode .betterhead span{background-color: var(--bg-dark);color:#fff}
@@ -643,3 +643,5 @@ i.badgecounter{background-color:var(--bg-dark);margin-left:10px;border-radius:20
 .gameheader.spoiler.singlebetter.active:after {
 transform: rotate(180deg);
 }
+.ratebadge.btimg span{background-color: #fff;border-radius:6px;display: flex;align-items:center;justify-content: center;padding:4px;}
+.ratebadge img{max-width:90%}
