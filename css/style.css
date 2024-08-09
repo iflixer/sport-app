@@ -645,3 +645,6 @@ transform: rotate(180deg);
 }
 .ratebadge.btimg span{background-color: #fff;border-radius:6px;display: flex;align-items:center;justify-content: center;padding:4px;}
 .ratebadge img{max-width:90%}
+
+a.banner{display:block;margin:40px auto; border-radius:8px;}
+.banner img{max-width:100%;height:auto;border-radius:8px;}
