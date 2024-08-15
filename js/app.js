@@ -126,7 +126,7 @@ $(document).ready(function () {
 const apikey = '6b595851d5eefee94b1a6113b126e089';
     var data = '';
 var settings = {
-    "url": "https://v3.football.api-sports.io/fixtures?timezone=Europe/Kiev&date="+today,
+    "url": "https://v3.football.api-sports.io/fixtures?timezone=339&date="+today,
     "method": "GET",
     "timeout": 0,
     "headers": {
