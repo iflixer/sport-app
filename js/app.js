@@ -97,21 +97,6 @@ $(document).ready(function () {
         $('.upcomebut:first-child').addClass('active');
     });
 
-    $(document).on('click', '.spoiler', function () {
-        $(this).parent().toggleClass('toggled');
-        $(this).next('.gamecontent').slideToggle();
-    });
-
-    $(document).on('click', '.better-rates', function () {
-        $('.betters-fullinfo').addClass('active');
-    });
-
-
-
-    $(document).on('click', '.gameheader.spoiler.singlebetter', function () {
-        $(this).toggleClass('active');
-    });
-
 
 
     $(document).on('click', '.goback', function () {
