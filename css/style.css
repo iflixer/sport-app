@@ -661,9 +661,11 @@ i.afterbadge{color:black;margin-left:10px;font-size:11px;}
 .ginfo{margin-top:15px;}
 #wg-api-football-game{padding:10px !important;}
 
-.singlebet{display:flex;flex-wrap:wrap;justify-content: stretch;margin-top:10px;}
+.singlebet{display:flex;flex-wrap:wrap;justify-content: stretch;margin-top:10px;border-bottom:1px solid rgba(255,255,255,0.2);padding:5px 0}
+.singlebet:last-child{border-bottom:0;}
 .singlebet>p{width:100%; display:none}
-.singlebet:nth-child(4n + 1)>p{display: block; }
+.singlebet:nth-child(4n + 1)>p{display: block; padding:0 0 12px;font-weight:600;}
 .singlebet .ratebadge.btimg{display: flex;flex:auto;margin-bottom:5px;justify-content: center;align-items: center;max-width:80px;}
 .singlebet .ratebadge.btimg p{font-weight:700;font-size:15px;}
 .singleodd{display: flex;flex:auto;margin-bottom:5px;}
+.bet-group{padding:10px 0; border-top:1px solid rgba(255,255,255,0.5);}
