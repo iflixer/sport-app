@@ -39,11 +39,34 @@ $(document).ready(function () {
 
     // Show/hide radio group on button click
     $('.main-bet-but').on('click', function () {
-        $('.slidefrombot').toggleClass('show');
+        $(this).next('.slidefrombot').toggleClass('show');
         $('body').toggleClass('hasover');
     });
 
-    // Hide radio group on clicking outside or swiping down
+    $('input[name="betoption"]').on('change', function() {
+        if ($(this).val() === '0' && $(this).is(':checked')) {
+            $('input[name="betoption"]').not(this).prop('checked', false);
+            $('.singlebet').addClass('active');
+        }else{
+            $('input[name="betoption"][value="0"]').prop('checked', false);
+            var activebetters = [];
+            $('input[name="betoption"]:checked').each(function() {
+                activebetters.push(parseInt($(this).val(), 10));
+            });
+            $('.singlebet').removeClass('active');
+            $.each( activebetters, function(index, id) {
+                $('.singlebet[data-better-id="'+id+'"]').addClass('active');
+            });
+        }
+    });
+
+    $('input[name="bettype"]').on('change', function() {
+        var newopt = $(this).val();
+        $('.bet-group').removeClass('active');
+        $('.bet-group[data-bet-id="'+newopt+'"]').addClass('active');
+    });
+
+
     $(document).on('click touchstart', function (e) {
         if (!$(e.target).closest('.slidefrombot, .main-bet-but').length) {
             $('.slidefrombot').removeClass('show');

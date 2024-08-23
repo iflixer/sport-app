@@ -26,6 +26,16 @@ const bet_list = [8, 11, 32];
     });
 
     function getLeagueOdds(league, inplay) {
+
+        var activegroup = $('input[name="bettype"]:checked').val();
+        var activebetters = [];
+            $('input[name="betoption"]:checked').each(function() {
+                activebetters.push(parseInt($(this).val(), 10));
+            });
+
+        // console.log(activebetters);
+
+
         var settings2 = {
             "url": 'https://v3.football.api-sports.io/odds?league=' + league + '&season=' + currentseason + '&date=' + today,
             "method": "GET",
@@ -94,16 +104,21 @@ const bet_list = [8, 11, 32];
 
                 // alltahtis();
                 onlycommon();
-               var thisgame = $('.gamerow[data-lg-id="'+league+'"]').find('.gamerow[data-fixid="'+ fixid+'"]');
+                var thisgame = $('.gamerow[data-lg-id="'+league+'"]').find('.gamerow[data-fixid="'+ fixid+'"]');
                 var betlist = '<div class="betters-info">';
                 $.each(thisgamedata, function(index, better){
                 var better_name = better.name;
                 var better_id = better.id;
 
                     $.each(better.bets, function(index, bet_item){
-                        betlist += '<div class="singlebet" data-better-id="'+better_id+'" data-better-name="'+better_name+'" data-bet-id="'+bet_item.id+'" data-bet-name="'+bet_item.name+'">';
-                        var betitemname = bet_item.name;
-                        betlist += '<p>'+betitemname+'</p>';
+                        var betteractive = '';
+                       // console.log(better_id );
+                        if (activebetters.includes(better_id) || activebetters[0] === 0) {
+                            //console.log(better_id + ' is in the array.');
+                            betteractive = ' active';
+                        }
+                        betlist += '<div class="singlebet'+betteractive+'" data-better-id="'+better_id+'" data-better-name="'+better_name+'" data-bet-id="'+bet_item.id+'" data-bet-name="'+bet_item.name+'">';
+
                         betlist += '<div class="ratebadge btimg"><span><p>'+better_name+'</p></div>';
                         $.each(bet_item.values, function(index, singleodd){
                             betlist += '<div class="singleodd">';
@@ -132,6 +147,7 @@ const bet_list = [8, 11, 32];
                 var grouped = {};
                 $.each($items, function(index, item) {
                     var betId = $(item).data('bet-id');
+
                     if (!grouped[betId]) {
                         grouped[betId] = [];
                     }
@@ -139,10 +155,15 @@ const bet_list = [8, 11, 32];
                 });
 
 // Build the new HTML string with grouped elements
+
                 var newHtmlString = '<div>';
                 $.each(grouped, function(betId, itemsHtml) {
                     // Optionally, you could add a wrapper or heading for each group
-                    newHtmlString += '<div class="bet-group" data-bet-id="' + betId + '">';
+                    var groupshow = '';
+                    if(activegroup === betId){
+                        groupshow = ' active';
+                    }
+                    newHtmlString += '<div class="bet-group'+groupshow+'" data-bet-id="' + betId + '">';
                     $.each(itemsHtml, function(index, html) {
                         newHtmlString += html;
                     });
@@ -156,9 +177,15 @@ const bet_list = [8, 11, 32];
 
                thisgame.append(groupedbets+'<div class="endgame"></div>');
 
+        });
+            $('.bet-group').each(function(index,element){
+                var groupname = $(this).find('.singlebet:first-child').data('bet-name');
+                $(this).prepend('<div class="blockname">'+groupname+'</div>');
+            });
+        });
 
-        });
-        });
+
+
     }
 
     function refresh_data(data) {
