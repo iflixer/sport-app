@@ -128,12 +128,14 @@ $(document).ready(function () {
         var thishtml = $(this).parents('.gamerow').html();
         $('.betters-fullinfo .gamebetfulldata').html(thishtml);
         $('.betters-fullinfo').addClass('active');
+        $('.goback').fadeIn('slow');
     });
 
     $(document).on('click', '.goback', function () {
         $('.betters-fullinfo').removeClass('active');
         $('body').removeClass('noscroll');
         $('.betters-fullinfo .gamebetfulldata').html('');
+        $('.goback').hide();
     });
 
 });

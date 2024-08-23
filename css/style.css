@@ -701,3 +701,19 @@ i.afterbadge{color:black;margin-left:10px;font-size:11px;}
 .betters-fullinfo .gamebetfulldata .bet-group .singlebet{display: flex !important}
 .betters-fullinfo.active .btn.allbets,
 .betters-fullinfo.active .gamebetfulldata .gamebadges.ginfo .badge{display: none !important}
+
+.goback i {margin-right: 10px}
+.goback {
+    position: fixed;
+    z-index: 999;
+    background-color: black;
+    width: 100vw;
+    height: 41px;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    display: none;
+    font-weight: 600;
+}
