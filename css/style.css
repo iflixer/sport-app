@@ -667,10 +667,20 @@ i.afterbadge{color:black;margin-left:10px;font-size:11px;}
 .ginfo{margin-top:15px;}
 #wg-api-football-game{padding:10px 10px 40px !important;}
 
+.badge.league.standings{margin-right:0;height:32px;}
+.badge.league.standings span{margin:0 5px;font-weight:600}
+.badge.league.standings i{width:25px; height:25px;}
+.badge.league.standings i.afterbadge {margin-left: 5px;margin-right: 0}
+
+
 .gameshortinfo{background-color: #f1f1f1;padding:10px;border-radius:10px;border:1px solid white}
 .dark-mode .gameshortinfo{background-color: #3b424b;}
+
+
 .btn.allbets{background-color: #f0f0f0;color:var(--main-green);
-    display: flex;margin:20px auto 30px;padding:5px 20px;align-items: center;justify-content: center;width:fit-content; border-radius: 30px;font-weight: 600;cursor:pointer}
+    display: flex;margin:20px auto 30px;padding:5px 20px;align-items: center;
+    justify-content: center;width:fit-content; border-radius: 30px;font-weight: 600;cursor:pointer;
+    box-shadow: inset 0 0 5px var(--main-green);}
 
 .singlebet{display:none;flex-wrap:wrap;justify-content: stretch;margin-top:10px;border-bottom:1px solid rgba(255,255,255,0.2);padding:5px 0}
 .singlebet.active{display:flex;}

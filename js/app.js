@@ -123,7 +123,7 @@ $(document).ready(function () {
 
     $(document).on('click', '.btn.allbets', function () {
         $('body').addClass('noscroll');
-        $('.betters-fullinfo .gamebetfulldata').html();
+        $('.betters-fullinfo .gamebetfulldata').html('');
         var thisfix = $(this).parents('.gamerow').data('fixid');
         var thishtml = $(this).parents('.gamerow').html();
         $('.betters-fullinfo .gamebetfulldata').html(thishtml);
@@ -133,6 +133,7 @@ $(document).ready(function () {
     $(document).on('click', '.goback', function () {
         $('.betters-fullinfo').removeClass('active');
         $('body').removeClass('noscroll');
+        $('.betters-fullinfo .gamebetfulldata').html('');
     });
 
 });
