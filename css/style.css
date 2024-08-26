@@ -362,6 +362,9 @@ body.hasover .overlay {
     font-weight: 600;
     font-size: 12px;
 }
+ .upcomebut.allgames {
+    padding: 0 10px;
+}
 
 .dark-mode #upcome, .dark-mode .upcomebut {
     background-color: var(--li-dark);
