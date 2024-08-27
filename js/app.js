@@ -124,7 +124,7 @@ $(document).ready(function () {
     $(document).on('click', '.btn.allbets', function () {
         $('body').addClass('noscroll');
         $('.betters-fullinfo .gamebetfulldata').html('');
-        var thisfix = $(this).parents('.gamerow').data('fixid');
+        var thisfix = $(this).parents('.lgamerow').data('fixid');
         var thishtml = $(this).parents('.gamerow').html();
         $('.betters-fullinfo .gamebetfulldata').html(thishtml);
         $('.betters-fullinfo').addClass('active');
@@ -137,5 +137,98 @@ $(document).ready(function () {
         $('.betters-fullinfo .gamebetfulldata').html('');
         $('.goback').hide();
     });
+
+    $(document).on('click', '.upcomebut.live', function () {
+        $('.gamerow').each(function(index) {
+            $(this).removeClass('notstarted');
+            var fstat = $(this).data('status');
+            if (fstat === 'LIVE' || fstat === '1H' || fstat === 'HT' || fstat === '2H' || fstat === 'ET' || fstat === 'P'){
+                $(this).show().addClass('livenow');
+                }else{
+                $(this).hide();
+            }
+    });
+        $('.lgamerow').each(function() {
+            if ($(this).find('.livenow').length > 0) {
+                if ($(this).index() > 0) {
+                    $(this).find('.gameheader.spoiler').trigger('click');
+                }
+            }else{
+                $(this).hide();
+            }
+        });
+    });
+
+    $(document).on('click', '.upcomebut.allupcome, .upcomein.s24h', function () {
+        $('.gamerow').each(function(index) {
+            var fstat = $(this).data('status');
+            $(this).removeClass('livenow');
+            if (fstat === 'NS'){
+                $(this).show().addClass('notstarted');
+            }else{
+                $(this).hide();
+            }
+        });
+        $('.lgamerow').each(function() {
+            if ($(this).find('.notstarted').length < 1) {
+                $(this).hide();
+            }else{
+                $(this).show();
+            }
+        });
+
+    });
+    $(document).on('click', '.upcomein.ssh', function () {
+        var uptime = parseInt($(this).data('upcome'));
+        $('.gamerow.notstarted').each(function(index) {
+            var thisstart = $(this).data('start-time');
+
+            var timeParts = thisstart.split(':');
+            var hours = parseInt(timeParts[0], 10);
+            var minutes = parseInt(timeParts[1], 10);
+
+            var now = new Date();
+            var timestamp1 = now.getTime();
+            var now2 = now;
+
+// Set the time to today's date
+            now2.setHours(hours);
+            now2.setMinutes(minutes);
+            now2.setSeconds(0); // Optionally set seconds to 0
+            now2.setMilliseconds(0); // Optionally set milliseconds to 0
+
+// Get the timestamp
+            now2.setHours(hours);
+            now2.setMinutes(minutes);
+            now2.setSeconds(0); // Optionally set seconds to 0
+            now2.setMilliseconds(0); // Optionally set milliseconds to 0
+
+// Get the timestamp
+            var timestamp2 = now2.getTime();
+            if(timestamp1 > timestamp2){
+                timestamp2 = timestamp2 + 86400000;
+            }
+            var between = parseInt(timestamp2) - parseInt(timestamp1);
+            var hoursto = between / (60*60*1000);
+            if(uptime > hoursto) {
+                $(this).show();
+            }else{
+                $(this).hide();
+            }
+
+           });
+    });
+
+
+
+    $(document).on('click', '.upcomebut.allgames, .upcomeclose', function () {
+        $('.gamerow').each(function(index) {
+                $(this).removeClass('livenow');
+                $(this).show();
+             });
+        $('.lgamerow').show();
+    });
+
+
 
 });

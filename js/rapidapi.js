@@ -107,7 +107,7 @@ const bet_list = [8, 11, 32];
 
                 // alltahtis();
                 onlycommon();
-                var thisgame = $('.gamerow[data-lg-id="' + league + '"]').find('.gamerow[data-fixid="' + fixid + '"]');
+                var thisgame = $('.lgamerow[data-lg-id="' + league + '"]').find('.gamerow[data-fixid="' + fixid + '"]');
                 var betlist = '<div class="betters-info">';
                 $.each(thisgamedata, function (index, better) {
                     var better_name = better.name;
@@ -195,7 +195,7 @@ const bet_list = [8, 11, 32];
     function refresh_data(data) {
         var decoded_data = data;
         //var allowed_league_ids = [2, 3, 39, 140, 78, 71, 61, 91, 119, 1, 13, 12];
-        var allowed_league_ids = [2, 3, 39, 140, 78, 71, 61, 91, 119, 1, 13, 12, 48, 660, 772, 906, 932, 931, 933, 939, 1020, 1128];
+        var allowed_league_ids = [2, 3, 39, 140, 78, 71, 61, 91, 119, 1, 13, 12, 48, 660, 772, 906, 932, 931, 933, 939, 1020, 1128,296];
         // Group fixtures by league ID
         var grouped_by_league = {};
         var other_leagues = [];
@@ -242,7 +242,7 @@ const bet_list = [8, 11, 32];
 
 
                 var leagueData =
-                    '<div class="gamerow' + spoiltogled + '"  data-lg-id="' + fixtures[0].league.id + '">' + leagueSpoiler + '<div class="gamecontent"' + gcontent + '>' +
+                    '<div class="lgamerow' + spoiltogled + '"  data-lg-id="' + fixtures[0].league.id + '">' + leagueSpoiler + '<div class="gamecontent"' + gcontent + '>' +
                     '<div class="league-row"><div class="badge league standings load-standng-widget" data-league="' + fixtures[0].league.id + '"><i><img src="' + fixtures[0].league.logo + '"></i><span>Standings</span><i class="afterbadge fas fa-external-link-alt"></i></div></div>';
 
 
@@ -280,9 +280,13 @@ const bet_list = [8, 11, 32];
                         matchstat = '<div data-fixid="' + fixture.fixture.id + '" class="badge">Not started</div>';
                         showtime = '<div class="badge timer"><i class="fas fa-clock"></i>' + starttime + '</div>';
                     }
+                    if (fstat === 'CANC') {
+                        matchstat = '<div data-fixid="' + fixture.fixture.id + '" class="badge">CANCELED</div>';
+                        showtime = '';
+                    }
 
                     var fixture_row =
-                        '<div class="gamerow" data-fixid="' + fixture.fixture.id + '"><div class="gameshortinfo">' +
+                        '<div class="gamerow" data-status="'+fstat+'" data-start-time="'+starttime+'" data-fixid="' + fixture.fixture.id + '"><div class="gameshortinfo">' +
                         '<div class="gamebadges">' + matchstat + showtime + matchtime + '</div>' +
                         '<div class="game-stat">' +
                         '<div class="team thome">' + home_team_name + '</div>' +
@@ -303,7 +307,8 @@ const bet_list = [8, 11, 32];
             }
             $('.gamescontainer').append(leagueData);
         }
-
+        var totalcoccer = $('.gamescontainer .gamerow').length;
+        $('.menu-item[data-sport="soccer"] .activeevents').text(totalcoccer);
         // console.log(grouped_by_league);
     }
 
