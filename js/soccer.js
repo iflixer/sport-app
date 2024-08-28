@@ -110,6 +110,55 @@ var allowed_league_ids = [2, 3, 39, 140, 78, 71, 61, 91, 119, 1, 13, 12, 48, 660
                 // alltahtis();
                 onlycommon();
                 var thisgame = $('.lgamerow[data-lg-id="' + league + '"]').find('.gamerow[data-fixid="' + fixid + '"]');
+                var liveodds = '';
+                var liveoddstxt = '';
+                var fstat = thisgame.data('status');
+                if (fstat === 'LIVE' || fstat === '1H' || fstat === 'HT' || fstat === '2H' || fstat === 'ET' || fstat === 'P'){
+                    console.log(fixid+ '- is LIVE');
+                    thisgame.addClass('live-live');
+                    var settings3 = {
+                        "url": apibase+'/odds/live?fixture=' + fixid,
+                        "method": "GET",
+                        "timeout": 0,
+                        "headers": {
+                            "x-rapidapi-key": apikey,
+                            "x-rapidapi-host": "v3.football.api-sports.io"
+                        },
+                    };
+
+                    $.ajax(settings3).done(function (response) {
+                        liveodds = response;
+                        console.log(liveodds);
+                        liveoddstxt += '<div class="live-odds">';
+                        liveoddstxt += '<div class="singlebet active">';
+                        $.each(liveodds.response[0].odds, function (index, singleodd) {
+                            liveoddstxt += '<div class="liveblockname">'+singleodd.name+'</div>';
+
+
+                            $.each(singleodd.values, function (index, bet_item) {
+                                var suspended = '';
+                                var handi = '';
+                                if(bet_item.suspended != false){
+                                    suspended = 'suspended';
+                                }
+                                if(bet_item.handicap){
+                                    handi = 'Handicap: '+bet_item.handicap;
+                                }
+                                liveoddstxt  += '<div class="singleodd">';
+                                liveoddstxt  += ' <div class="ratebadge"><p class="handic">' + handi + '</p><p>' + bet_item.value + '</p>\n' +
+                                    '                        <p class="rate">' + bet_item.odd + '</p><p class="susp">' + suspended + '</p></div>';
+                                liveoddstxt += '</div>';
+                            });
+
+                        });
+                        liveoddstxt += '</div></div>';
+                        thisgame.find('.endgameinfo').after(liveoddstxt);
+                    });
+
+
+                }
+
+
                 var betlist = '<div class="betters-info">';
                 $.each(thisgamedata, function (index, better) {
                     var better_name = better.name;
@@ -184,6 +233,7 @@ var allowed_league_ids = [2, 3, 39, 140, 78, 71, 61, 91, 119, 1, 13, 12, 48, 660
 
             });
             $('.bet-group').each(function (index, element) {
+                $(this).addClass('prematch');
                 var groupname = $(this).find('.singlebet:first-child').data('bet-name');
                 if (typeof groupname !== 'undefined') {
                     $(this).prepend('<div class="blockname">' + groupname + '</div>');
@@ -357,7 +407,6 @@ var allowed_league_ids = [2, 3, 39, 140, 78, 71, 61, 91, 119, 1, 13, 12, 48, 660
             $(this).addClass('active');
         }
     });
-
     $(document).on('click', '.upcomebut.live', function () {
 
         $('.gamerow').each(function(index) {
@@ -401,7 +450,6 @@ var allowed_league_ids = [2, 3, 39, 140, 78, 71, 61, 91, 119, 1, 13, 12, 48, 660
             }
         });
     });
-
     $(document).on('click', '.upcomebut.allupcome, .upcomein.s24h', function () {
         $('.gamerow').each(function(index) {
             var fstat = $(this).data('status');
@@ -420,7 +468,6 @@ var allowed_league_ids = [2, 3, 39, 140, 78, 71, 61, 91, 119, 1, 13, 12, 48, 660
         });
 
     });
-
     $(document).on('click', '.upcomein.ssh', function () {
         $('.gamescontainer .message').text('');
         var uptime = parseInt($(this).data('upcome'));

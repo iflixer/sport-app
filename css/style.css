@@ -723,3 +723,8 @@ i.afterbadge{color:black;margin-left:10px;font-size:11px;}
 }
 
 .gamescontainer .message{padding:10px 10px 0;text-align:center}
+.liveblockname{min-width:100%;margin:10px 0;}
+.ratebadge p.susp{color:#ff4e64}
+.live-live .live-odds{display: block}
+.live-live .prematch{display: none !important;}
+.live-live .btn.allbets{display: none !important;}
