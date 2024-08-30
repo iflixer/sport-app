@@ -44,10 +44,12 @@ $(document).ready(function () {
     });
 
     $('input[name="betoption"]').on('click', function() {
-        var adimg = $(this).data('logo');
-        var adlink = $(this).data('href');
-        $('.main-bet-but.bettype.adsbut img').attr('src',adimg);
-        $('#ads a').attr('href',adlink);
+        if ($(this).is(':checked')) {
+            var adimg = $(this).data('logo');
+            var adlink = $(this).data('href');
+            $('.main-bet-but.bettype.adsbut img').attr('src', adimg);
+            $('#ads a').attr('href', adlink);
+        }
     });
     $('input[name="betoption"]').on('change', function() {
         if ($(this).val() === '0' && $(this).is(':checked')) {
