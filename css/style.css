@@ -319,6 +319,10 @@ body.hasover .overlay {
     font-size: 12px;
 }
 
+.main-bet-but.bettype.adsbut{width:100%;height:34px;display: flex;align-items: center;padding:0 10px;margin-left:5px;background-color: var(--main-green)}
+.main-bet-but.bettype.adsbut img{margin-right:10px;}
+.main-bet-but.bettype.adsbut i{margin-left:10px;}
+
 .slidefrombot-header {
     font-weight: 600;
     text-align: center;

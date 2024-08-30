@@ -43,6 +43,12 @@ $(document).ready(function () {
         $('body').toggleClass('hasover');
     });
 
+    $('input[name="betoption"]').on('click', function() {
+        var adimg = $(this).data('logo');
+        var adlink = $(this).data('href');
+        $('.main-bet-but.bettype.adsbut img').attr('src',adimg);
+        $('#ads a').attr('href',adlink);
+    });
     $('input[name="betoption"]').on('change', function() {
         if ($(this).val() === '0' && $(this).is(':checked')) {
             $('input[name="betoption"]').not(this).prop('checked', false);
@@ -52,6 +58,7 @@ $(document).ready(function () {
             var activebetters = [];
             $('input[name="betoption"]:checked').each(function() {
                 activebetters.push(parseInt($(this).val(), 10));
+
             });
             $('.singlebet').removeClass('active');
             $.each( activebetters, function(index, id) {
