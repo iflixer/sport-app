@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     menuItems.forEach((item, index) => {
         item.addEventListener('click', function(event) {
-            event.preventDefault();
+            // event.preventDefault();
 
             menuItems.forEach(i => i.classList.remove('active'));
             this.classList.add('active');

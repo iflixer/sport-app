@@ -1,6 +1,7 @@
 // FOOTBALL API
 const apikey = '6b595851d5eefee94b1a6113b126e089';
 const apibase = 'https://v3.football.api-sports.io';
+const apihost = 'v3.football.api-sports.io';
 var betters_list = [8, 11, 32];
 // var allowed_league_ids = [2, 3, 39, 140, 78, 71, 61, 91, 119, 1, 13, 12];  // INITIAL LIST
 var allowed_league_ids = [2, 3, 39, 140, 78, 71, 61, 91, 119, 1, 13, 12, 48, 660, 772, 906, 932, 931, 933, 939, 1020, 1128,296,297,298,299];
@@ -19,7 +20,7 @@ var allowed_league_ids = [2, 3, 39, 140, 78, 71, 61, 91, 119, 1, 13, 12, 48, 660
         "timeout": 0,
         "headers": {
             "x-rapidapi-key": apikey,
-            "x-rapidapi-host": "v3.football.api-sports.io"
+            "x-rapidapi-host": apihost
         },
     };
     $.ajax(settings).done(function (response) {
