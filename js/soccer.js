@@ -21,12 +21,13 @@ var allowed_league_ids = [2, 3, 39, 140, 78, 71, 61, 91, 119, 1, 13, 12, 48, 660
       //  "url": apibase+"/fixtures?season=2024&date=" + '2024-12-31',
         "method": "GET",
         "timeout": 0,
-        "headers": {
-            "x-rapidapi-key": apikey,
-            "x-apisports-key":apikey,
-            "x-rapidapi-host": apihost
+       /*
+         "headers": {
+           "x-rapidapi-key": apikey,
+           "x-apisports-key":apikey,
+          "x-rapidapi-host": apihost
 
-        },
+        },*/
     };
     $.ajax(settings).done(function (response) {
         data = response;
@@ -49,7 +50,7 @@ var allowed_league_ids = [2, 3, 39, 140, 78, 71, 61, 91, 119, 1, 13, 12, 48, 660
             "method": "GET",
             "timeout": 0,
             "headers": {
-                "x-rapidapi-key": apikey,
+              //  "x-rapidapi-key": apikey,
                 "x-rapidapi-host": apihost
             },
         };
