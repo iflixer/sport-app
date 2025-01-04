@@ -733,3 +733,17 @@ i.afterbadge{color:black;margin-left:10px;font-size:11px;}
 .live-live .live-odds{display: block}
 .live-live .prematch{display: none !important;}
 .live-live .btn.allbets{display: none !important;}
+
+@media(max-width:374px){
+    .main-bet-but {
+        font-size: 10px;
+    }
+    #ads img{max-width:60px;}
+}@media(max-width:330px){
+    .main-bet-but .fas.fa-chevron-down {
+        padding: 4px;
+    }
+    .main-bet-but {
+        padding: 6px;
+    }
+}
