@@ -4,12 +4,14 @@ var betters_list = [8, 11, 32];
 // var allowed_league_ids = [2, 3, 39, 140, 78, 71, 61, 91, 119, 1, 13, 12];  // INITIAL LIST
 var allowed_league_ids = [2, 3, 39, 140, 78, 71, 61, 91, 119, 1, 13, 12, 48, 660, 772, 906, 932, 931, 933, 939, 1020, 1128,296,297,298,299,26,37,330,618,190,188,398];
 
+
 (function ($) {
     var timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
     var currentDate = new Date();
     var today = formatDate(currentDate);
     var currentseason = formatSeason(currentDate);
-    var data = '';
+    var soccerdata = '';
+
 
     // FIXTURES SETTINGS + GET
     var settings = {
@@ -18,8 +20,9 @@ var allowed_league_ids = [2, 3, 39, 140, 78, 71, 61, 91, 119, 1, 13, 12, 48, 660
         "timeout": 0,
     };
     $.ajax(settings).done(function (response) {
-        data = response;
-        refresh_data(data);
+       // console.log(response);
+        soccerdata = response.data;
+        refresh_data(soccerdata);
     });
 
     function getLeagueOdds(league, inplay) {
