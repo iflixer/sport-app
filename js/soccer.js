@@ -43,13 +43,13 @@ var allowed_league_ids = [2, 3, 39, 140, 78, 71, 61, 91, 119, 1, 13, 12, 48, 660
         };
 
         $.ajax(settings2).done(function (response) {
-            //         console.log(response);
-            $.each(response.response, function (index, item) {
+                //     console.log(response);
+            $.each(response.data.response, function (index, item) {
                 var fixid = item.fixture.id;
                 var rawbookmakers = item.bookmakers;
                 var thisgamedata = [];
 
-                //console.log(rawbookmakers);
+              //  console.log(rawbookmakers);
                 function alltahtis() {
                     function sortBetsById(bets) {
                         return bets.sort((a, b) => a.id - b.id);
@@ -64,7 +64,7 @@ var allowed_league_ids = [2, 3, 39, 140, 78, 71, 61, 91, 119, 1, 13, 12, 48, 660
                         };
                     });
 
-                    console.log(filteredBookmakers);
+                   // console.log(filteredBookmakers);
                 }
 
                 function onlycommon() {
@@ -97,7 +97,7 @@ var allowed_league_ids = [2, 3, 39, 140, 78, 71, 61, 91, 119, 1, 13, 12, 48, 660
                         });
                     });
 
-                    console.log(result);
+                //    console.log(result);
                     thisgamedata = result;
                 }
 
@@ -108,7 +108,7 @@ var allowed_league_ids = [2, 3, 39, 140, 78, 71, 61, 91, 119, 1, 13, 12, 48, 660
                 var liveoddstxt = '';
                 var fstat = thisgame.data('status');
                 if (fstat === 'LIVE' || fstat === '1H' || fstat === 'HT' || fstat === '2H' || fstat === 'ET' || fstat === 'P'){
-                    console.log(fixid+ '- is LIVE');
+                  //  console.log(fixid+ '- is LIVE');
                     thisgame.addClass('live-live');
                     var settings3 = {
                         "url": apibase+'/odds/live?fixture=' + fixid,
@@ -118,7 +118,7 @@ var allowed_league_ids = [2, 3, 39, 140, 78, 71, 61, 91, 119, 1, 13, 12, 48, 660
 
                     $.ajax(settings3).done(function (response) {
                         liveodds = response;
-                        console.log(liveodds);
+                       // console.log(liveodds);
                         liveoddstxt += '<div class="live-odds">';
                         liveoddstxt += '<div class="singlebet active">';
                         $.each(liveodds.response[0].odds, function (index, singleodd) {
@@ -362,6 +362,7 @@ var allowed_league_ids = [2, 3, 39, 140, 78, 71, 61, 91, 119, 1, 13, 12, 48, 660
         let standings = $('#wg-api-football-standings');
         standings.html('').addClass('active');
         standings.attr('data-league', id);
+        standings.attr('data-season', currentseason);
         window.document.dispatchEvent(new Event("DOMContentLoaded", {
             bubbles: true,
             cancelable: true
