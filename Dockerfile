@@ -1,4 +1,4 @@
-FROM alpine/git as front
+FROM alpine as front
 
 WORKDIR /app
 COPY . .
