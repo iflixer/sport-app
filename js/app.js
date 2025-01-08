@@ -38,9 +38,10 @@ document.addEventListener('change', function (event) {
 $(document).ready(function () {
 
     // Show/hide radio group on button click
-    $('.main-bet-but').on('click', function () {
+    $('.main-bet-but').on('click', function (b) {
         $(this).next('.slidefrombot').toggleClass('show');
         $('body').toggleClass('hasover');
+        b.stopImmediatePropagation();
     });
 
     $('input[name="betoption"]').on('click', function() {
@@ -68,7 +69,6 @@ $(document).ready(function () {
             });
         }
     });
-
     $('input[name="bettype"]').on('change', function() {
         var newopt = $(this).val();
         $('.bet-group').removeClass('active');
@@ -135,7 +135,22 @@ $(document).ready(function () {
         $('.goback').hide();
     });
 
+});
 
+
+$(function() {
+    $(document).on('click', '#authbut', function (a) {
+        $('body').toggleClass('hasover');
+        $('#auth').toggleClass('show');
+        a.stopImmediatePropagation();
+    });
+});
+$(function() {
+    $(document).on('click', '#evalid', function (c) {
+        $('body').toggleClass('hasover');
+        $('#evalf').toggleClass('show');
+        c.stopImmediatePropagation();
+    });
 });
 
 function tstotime(timestamp) {

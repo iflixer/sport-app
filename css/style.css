@@ -244,6 +244,7 @@ a {
     margin-left: 10px;
 }
 
+#auth,
 .slidefrombot {
     position: fixed;
     bottom: 0;
@@ -275,19 +276,26 @@ a {
 
 body.hasover .overlay {
     background-color: rgba(0, 0, 0, 0.6);
-    z-index: 1;
+    z-index: 2;
 }
 
+.dark-mode #auth,
 .dark-mode .slidefrombot {
     background-color: var(--bg-dark);
     border-top: 1px solid var(--bg-dark);
 }
 
+#auth.show,
 .slidefrombot.show {
     display: block;
     transform: translateY(0%);
     z-index: 1000;
 }
+.bpop{width:100%;max-width:424px;margin:10px auto;padding:10px;box-sizing: border-box;}
+.bpoplabel,.bpop input,.bpop button{width:100%;background-color: transparent;margin-bottom:5px;box-sizing: border-box;}
+.bpop input,.bpop button{width:100%;border:1px solid var(--main-green);height:30px;border-radius:8px;color:#fff}
+.bpop button{background-color:var(--main-green);color:#fff;padding:10px 20px;min-height:38px;font-weight: bold}
+
 
 .selectors-line {
     display: flex;
