@@ -21,11 +21,13 @@ function getAT(tgid,tgname,mail,register, verify) {
             $('#tg_id2').val(tgid);
             $('#upemail').text(u_m);
 
-            if(!u_mv && u_m.length < 5) {
+
+            if(u_m == null) {
                 $('#authbut').trigger('click');
             }
-            if(!u_mv && u_m.length > 5) {
+            if(!u_mv && u_m !== null) {
                 sendverify(a_t);
+                $('input[name="tg_id"]').val(a_t);
                 $('#evalid').trigger('click');
             }
             if(!register && !verify) {
@@ -219,6 +221,32 @@ $(function() {
         c.stopImmediatePropagation();
     });
 });
+$(function() {
+    $('#dovalidate').click(function () {
+        var token = $('input[name="token"]').val();
+        var vcode = $('input[name="valcode"]').val();
+        sendvalcode(token,vcode);
+    });
+});
+
+function sendvalcode(token,vcode){
+    var vdata = JSON.stringify({code: vcode});
+    $.ajax({
+        url: apibase + '/api/auth/verify',
+        type: 'POST',
+        contentType: 'application/json',
+        data: vdata,
+        headers: {
+            'Authorization': 'Bearer '+ token
+        },
+        success: function (response) {
+          console.log('Verified');
+        },
+        error: function (xhr, status, error) {
+            console.error('Error:', error);
+        }
+    });
+}
 
 function tstotime(timestamp) {
     var date = new Date(timestamp * 1000);
