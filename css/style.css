@@ -29,6 +29,8 @@ body.dark-mode {
     color: #f0f0f0
 }
 
+.preloader{margin:40px auto;width:40px;height:40px;}
+
 .maincontainer {
     display: block;
     width: 100%;
@@ -292,9 +294,10 @@ body.hasover .overlay {
     z-index: 1000;
 }
 .bpop{width:100%;max-width:424px;margin:10px auto;padding:10px;box-sizing: border-box;}
-.bpoplabel,.bpop input,.bpop button{width:100%;background-color: transparent;margin-bottom:5px;box-sizing: border-box;}
-.bpop input,.bpop button{width:100%;border:1px solid var(--main-green);height:30px;border-radius:8px;color:#fff}
-.bpop button{background-color:var(--main-green);color:#fff;padding:10px 20px;min-height:38px;font-weight: bold}
+.bpoplabel,.bpop input,.bpop btn{width:100%;background-color: transparent;margin-bottom:5px;box-sizing: border-box;}
+.bpop input,.bpop .btn{width:100%;border:1px solid var(--main-green);height:30px;border-radius:8px;color:#fff}
+.bpop input{text-align: center;padding:5px 10px;}
+.bpop .btn{background-color:var(--main-green);color:#fff;padding:10px 20px;min-height:38px;font-weight: bold;text-align: center}
 
 
 .selectors-line {
@@ -741,6 +744,11 @@ i.afterbadge{color:black;margin-left:10px;font-size:11px;}
 .live-live .live-odds{display: block}
 .live-live .prematch{display: none !important;}
 .live-live .btn.allbets{display: none !important;}
+
+.ematext,
+.resendtext{text-align: center;font-size:13px;margin-bottom:20px;line-height:150%}
+.resend{color: var(--main-green);text-decoration: underline;cursor:pointer}
+.recheck{}
 
 @media(max-width:374px){
     .main-bet-but {

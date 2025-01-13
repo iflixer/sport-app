@@ -4,14 +4,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
     <title>Sport Bet App</title>
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="icon.png">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/fa.all.min.css">
     <link rel="stylesheet" href="css/style.css?nc=080125">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
 </head>
 
 <body class="dark-mode">
@@ -35,29 +36,29 @@
 
     <div class="menu-container">
         <ul class="menu">
-            <li data-sport="basketball" class="menu-item" style="background-image:url(/img/basketball.png)"><span>Basketball</span>
+            <li data-sport="basketball" class="menu-item" style="background-image:url(img/basketball.png)"><span>Basketball</span>
             </li>
-            <li data-sport="tennis" class="menu-item" style="background-image:url(/img/tennis.jpg)"><span>Tennis</span>
+            <li data-sport="tennis" class="menu-item" style="background-image:url(img/tennis.jpg)"><span>Tennis</span>
 
             </li>
-            <li data-sport="formula1" class="menu-item" style="background-image:url(/img/formula1.png)">
+            <li data-sport="formula1" class="menu-item" style="background-image:url(img/formula1.png)">
                 <a href ="f1.html">
 
                 </a>
                 <span>Formula 1</span>
             </li>
 
-            <li data-sport="cricket" class="menu-item" style="background-image:url(/img/cricket.jpg)">
+            <li data-sport="cricket" class="menu-item" style="background-image:url(img/cricket.jpg)">
                 <a href ="cricket.html">
 
                 </a>
                 <span>Cricket</span>
 
             </li>
-            <li data-sport="soccer" class="menu-item active" style="background-image:url(/img/soccer.png)">
+            <li data-sport="soccer" class="menu-item active" style="background-image:url(img/soccer.png)">
                 <span>Soccer</span>
             </li>
-            <li data-sport="baseball" class="menu-item" style="background-image:url(/img/baseball.png)"><span>Baseball</span>
+            <li data-sport="baseball" class="menu-item" style="background-image:url(img/baseball.png)"><span>Baseball</span>
             </li>
         </ul>
     </div>
@@ -135,6 +136,7 @@
 
     <div class="gamescontainer">
         <div class="message"></div>
+        <div class="preloader"><img src="img/preloader.svg" width="40" height="40"></div>
     </div>
     <div class="betters-fullinfo">
         <div class="maincontainer">
@@ -168,15 +170,12 @@
     <div class="slidefrombot-header">Register</div>
     <div class="authform">
         <form class="bpop">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required><br><br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required><br><br>
-            <input type="hidden" id="tg_id" name="tg_id" value="default_tg_id_value">
-            <input type="hidden" id="token" name="token" value="default_token_value">
-            <button type="submit">Register</button>
+            <p class="ematext">Register now to access expert tips, in-depth sports analytics, and personalized recommendations</p>
+            <input type="email"  name="email" placeholder="Your e-mail" required><br><br>
+            <input type="hidden"  name="username" required>
+            <input type="hidden"  name="tg_id" value="">
+            <input type="hidden"  name="token" value="">
+            <div class="btn" id="doreg">Register</div>
         </form>
     </div>
 
@@ -185,21 +184,46 @@
     <div class="slidefrombot-header">Email validation</div>
     <div class="validateemail">
         <form class="bpop">
-            <label for="username">Please enter validation code:</label>
+            <p class="resendtext">
+                We’ve sent a verification code to your email (<span id="upemail"></span>). Please check your inbox (and spam folder).
+            <br>
+            <br>
+                If you didn’t receive the email, you can:<br> <br>
+                <span class="resend">1. Resend the code</span><br>
+                <span class="recheck">2. Check your email address and try again</span>
+            </p>
+            <br>
+            <label style="text-align: center;width:100%;display:block">Please enter validation code:</label>
             <input type="text"  name="valcode" required><br><br>
-            <input type="hidden" name="tg_id" value="default_tg_id_value">
-            <input type="hidden" name="token" value="default_token_value">
-            <button type="submit">Validate</button>
+            <input type="hidden" name="tg_id2" value="">
+            <input type="hidden" name="token" value="">
+            <div class="btn">Validate</div>
         </form>
     </div>
 </div>
 
 <div class="overlay"></div>
 
+<script src="js/jquery-3.7.1.min.js"></script>
+<script>
+    var tgid = 0;
+    var tgusername = '';
+    let tg = window.Telegram.WebApp;
+    if(tg) {
+        tg.expand();
+        tgid = tg.initDataUnsafe.user.id;
+        tgusername = tg.initDataUnsafe.user.username;
+    }
+    console.log(tgid,tgusername);
+    $('body').attr('data-tgid',tgid);
+    $('body').attr('data-tgname',tgusername);
 
-<script src="/js/jquery-3.7.1.min.js"></script>
-<script src="/js/slidermenu.js"></script>
-<script src="/js/app.js?nc=080125"></script>
-<script src="/js/soccer.js?nc=080125"></script>
+</script>
+
+
+<script src="js/app.js?nc=130125"></script>
+
+<script src="js/slidermenu.js"></script>
+<script src="js/soccer.js?nc=130125"></script>
 </body>
 </html>

@@ -1,3 +1,62 @@
+const apibase = 'https://api.flashscore.ai';
+window.a_t = null;
+function getAT(tgid,tgname,mail,register, verify) {
+    var sdata = JSON.stringify({peer_id: tgid,username: tgname,email:mail});
+    if(mail.length < 5){
+        sdata = JSON.stringify({peer_id: tgid,username: tgname});
+    }
+    $.ajax({
+        url: apibase + '/api/auth/login',
+        type: 'POST',
+        contentType: 'application/json',
+        data: sdata,
+        success: function (response) {
+            a_t = response.data.access_token;
+            u_m = response.data.peer_info.email;
+            u_mv = response.data.peer_info.email_verified;
+            console.log(u_m,u_mv);
+            $('input[name="email"]').val(u_m);
+            $('input[name="username"]').val(tgname);
+            $('input[name="tg_id"]').val(tgid);
+            $('#tg_id2').val(tgid);
+            $('#upemail').text(u_m);
+
+            if(!u_mv && u_m.length < 5) {
+                $('#authbut').trigger('click');
+            }
+            if(!u_mv && u_m.length > 5) {
+                sendverify(a_t);
+                $('#evalid').trigger('click');
+            }
+            if(!register && !verify) {
+                soccerdata(a_t);
+            }
+
+        },
+        error: function (xhr, status, error) {
+            console.error('Error:', error);
+        }
+    });
+}
+
+function sendverify(token) {
+    $.ajax({
+        url: apibase + '/api/auth/verify/send',
+        type: 'POST',
+        contentType: 'application/json',
+        data: 1,
+        headers: {
+            'Authorization': 'Bearer '+ token
+        },
+        success: function (response) {
+        console.log(response);
+        },
+        error: function (xhr, status, error) {
+            console.error('Error:', error);
+        }
+    });
+}
+
 // Function to save checkbox state to localStorage
 function saveCheckboxState(id, state) {
     localStorage.setItem(id, state);
@@ -143,6 +202,14 @@ $(function() {
         $('body').toggleClass('hasover');
         $('#auth').toggleClass('show');
         a.stopImmediatePropagation();
+    });
+});
+$(function() {
+    $('#doreg').click(function () {
+        var tgidf = $('input[name="tg_id"]').val();
+        var tgunf = $('input[name="username"]').val();
+        var mail = $('input[name="email"]').val();
+        getAT(tgidf,tgunf,mail,true,false);
     });
 });
 $(function() {
