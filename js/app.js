@@ -1,9 +1,9 @@
 const apibase = 'https://api.flashscore.ai';
 window.a_t = null;
-function getAT(tgid,tgname,mail,register, verify) {
-    var sdata = JSON.stringify({peer_id: tgid,username: tgname,email:mail});
-    if(mail.length < 5){
-        sdata = JSON.stringify({peer_id: tgid,username: tgname});
+function getAT(tgid,tgname,mail,register, reverify) {
+    var sdata =  sdata = JSON.stringify({peer_id: tgid,username: tgname});
+    if(register && reverify){
+        sdata = JSON.stringify({peer_id: tgid,username: tgname,email:mail,new_email:true});
     }
     $.ajax({
         url: apibase + '/api/auth/login',
@@ -18,7 +18,8 @@ function getAT(tgid,tgname,mail,register, verify) {
             $('input[name="email"]').val(u_m);
             $('input[name="username"]').val(tgname);
             $('input[name="tg_id"]').val(tgid);
-            $('#tg_id2').val(tgid);
+            $('input[name="tg_id2"]').val(tgid);
+            $('input[name="token"]').val(a_t);
             $('#upemail').text(u_m);
 
 
@@ -26,11 +27,12 @@ function getAT(tgid,tgname,mail,register, verify) {
                 $('#authbut').trigger('click');
             }
             if(!u_mv && u_m !== null) {
-                sendverify(a_t);
-                $('input[name="tg_id"]').val(a_t);
-                $('#evalid').trigger('click');
+                if(reverify) {
+                    sendverify(a_t);
+                }
+                 $('#evalid').trigger('click');
             }
-            if(!register && !verify) {
+            if(!register && !reverify) {
                 soccerdata(a_t);
             }
 
@@ -207,11 +209,11 @@ $(function() {
     });
 });
 $(function() {
-    $('#doreg').click(function () {
+    $('#doreg,span.resend').click(function () {
         var tgidf = $('input[name="tg_id"]').val();
         var tgunf = $('input[name="username"]').val();
         var mail = $('input[name="email"]').val();
-        getAT(tgidf,tgunf,mail,true,false);
+        getAT(tgidf,tgunf,mail,true,true);
     });
 });
 $(function() {
@@ -240,7 +242,14 @@ function sendvalcode(token,vcode){
             'Authorization': 'Bearer '+ token
         },
         success: function (response) {
-          console.log('Verified');
+            if (response.success){
+                console.log('Verified');
+                $('.validateemail .bpop').html('<p class="resendtext">Your email validated.<br> Thank you!</p>');
+                setTimeout(function() {
+                    $('.slidefrombot').removeClass('show');
+                    $('body').removeClass('hasover');
+                }, 2000);
+             }
         },
         error: function (xhr, status, error) {
             console.error('Error:', error);
