@@ -208,12 +208,20 @@ $(function() {
         a.stopImmediatePropagation();
     });
 });
+
+let isClickable = true;
 $(function() {
+
     $('#doreg,span.resend').click(function () {
+        if (!isClickable) return;
         var tgidf = $('input[name="tg_id"]').val();
         var tgunf = $('input[name="username"]').val();
         var mail = $('input[name="email"]').val();
+        isClickable = false;
         getAT(tgidf,tgunf,mail,true,true);
+        setTimeout(function () {
+            isClickable = true;
+        }, 1000);
     });
 });
 $(function() {
@@ -225,9 +233,14 @@ $(function() {
 });
 $(function() {
     $('#dovalidate').click(function () {
+        if (!isClickable) return;
         var token = $('input[name="token"]').val();
         var vcode = $('input[name="valcode"]').val();
+        isClickable = false;
         sendvalcode(token,vcode);
+        setTimeout(function () {
+            isClickable = true;
+        }, 1000);
     });
 });
 
