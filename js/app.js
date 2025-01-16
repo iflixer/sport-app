@@ -1,9 +1,12 @@
 const apibase = 'https://api.flashscore.ai';
 window.a_t = null;
-function getAT(tgid,tgname,mail,register, reverify) {
+function getAT(tgid,tgname,mail,register, reverify, skip) {
     var sdata =  sdata = JSON.stringify({peer_id: tgid,username: tgname});
     if(register && reverify){
         sdata = JSON.stringify({peer_id: tgid,username: tgname,email:mail,new_email:true});
+    }
+    if(skip){
+        sdata = JSON.stringify({peer_id: tgid,username: tgname,skip_registration:true});
     }
     $.ajax({
         url: apibase + '/api/auth/login',
@@ -14,6 +17,7 @@ function getAT(tgid,tgname,mail,register, reverify) {
             a_t = response.data.access_token;
             u_m = response.data.peer_info.email;
             u_mv = response.data.peer_info.email_verified;
+            var is_skip = response.data.peer_info.skip_registration;
             console.log(u_m,u_mv);
             $('input[name="email"]').val(u_m);
             $('input[name="username"]').val(tgname);
@@ -23,14 +27,16 @@ function getAT(tgid,tgname,mail,register, reverify) {
             $('#upemail').text(u_m);
 
 
-            if(u_m == null) {
-                $('#authbut').trigger('click');
-            }
-            if(!u_mv && u_m !== null) {
-                if(reverify) {
-                    sendverify(a_t);
+            if(is_skip == null || !is_skip) {
+                if (u_m == null) {
+                    $('#authbut').trigger('click');
                 }
-                 $('#evalid').trigger('click');
+                if (!u_mv && u_m !== null) {
+                    if (reverify) {
+                        sendverify(a_t);
+                    }
+                    $('#evalid').trigger('click');
+                }
             }
             if(!register && !reverify) {
                 soccerdata(a_t);
@@ -218,11 +224,26 @@ $(function() {
         var tgunf = $('input[name="username"]').val();
         var mail = $('input[name="email"]').val();
         isClickable = false;
-        getAT(tgidf,tgunf,mail,true,true);
+        getAT(tgidf,tgunf,mail,true,true, false);
         setTimeout(function () {
             isClickable = true;
         }, 1000);
     });
+
+    $('#doregskip').click(function () {
+        if (!isClickable) return;
+        var tgidf = $('input[name="tg_id"]').val();
+        var tgunf = $('input[name="username"]').val();
+        var mail = $('input[name="email"]').val();
+        isClickable = false;
+        getAT(tgidf,tgunf,mail,true,true, true);
+        setTimeout(function () {
+            $('.slidefrombot').removeClass('show');
+            $('body').removeClass('hasover');
+            isClickable = true;
+        }, 1000);
+    });
+
 });
 $(function() {
     $(document).on('click', '#evalid', function (c) {

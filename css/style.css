@@ -294,11 +294,13 @@ body.hasover .overlay {
     z-index: 1000;
 }
 .bpop{width:100%;max-width:424px;margin:10px auto;padding:10px;box-sizing: border-box;}
-.bpoplabel,.bpop input,.bpop btn{width:100%;background-color: transparent;margin-bottom:5px;box-sizing: border-box;}
+.bpoplabel,.bpop input,.bpop .btn{width:100%;background-color: transparent;margin-bottom:5px;box-sizing: border-box;}
 .bpop input,.bpop .btn{width:100%;border:1px solid var(--main-green);height:30px;border-radius:8px;color:#fff}
-.bpop input{text-align: center;padding:5px 10px;}
-.bpop .btn{background-color:var(--main-green);color:#fff;padding:10px 20px;min-height:38px;font-weight: bold;text-align: center}
-
+.bpop input{text-align: center;padding:4px 10px;color:#333}
+.dark-mode .bpop input{text-align: center;padding:4px 10px;color:white}
+.bpop .btn{background-color:var(--main-green);color:#fff;padding:7px 20px;min-height:38px;font-weight: bold;text-align: center}
+.bpop .btn.inverse{width:100%;background-color: transparent;margin-bottom:10px;box-sizing: border-box;border:1px solid #999;font-weight:400;color:#999}
+.dark-mode .bpop .btn.inverse{border:1px solid white;font-weight:400;margin-top:10px;color:white}
 
 .selectors-line {
     display: flex;
