@@ -1,5 +1,5 @@
 // FOOTBALL API
-const apikey = '6b595851d5eefee94b1a6113b126e089';
+const apikey = '872bea0ad002dbf9150777624727892b';
 const apibase_f1 = 'https://v1.formula-1.api-sports.io';
 var betters_list = [8, 11, 32];
 // var allowed_league_ids = [2, 3, 39, 140, 78, 71, 61, 91, 119, 1, 13, 12];  // INITIAL LIST

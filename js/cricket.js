@@ -37,25 +37,36 @@ var allowed_league_ids = [2, 3, 39, 140, 78, 71, 61, 91, 119, 1, 13, 12, 48, 660
         console.log(grouped_by_league);
 
         $.each(grouped_by_league, function(tour_id, data) {
-            var tour = data[0].tournament.name;
-
+            let league_id = data[0].tournament.id;
+            let tour = data[0].tournament.name;
+            let tourname = data[0].tournament.category.name;
+            let cflag = data[0].tournament.category.country.alpha2;
+            let flaglow = '';
+            if(cflag === undefined){
+                flaglow = data[0].tournament.category.flag;
+            }else{
+                flaglow = cflag.toLowerCase();
+            }
             var leagueSpoiler =
-                '<div class="gameheader spoiler"  data-lg-id="' + data[0].tournament.id + '">'+
-                '<div class="badge league"<span>' + data[0].tournament.category.name + '</span></div><div class="badge league"<span>' + data[0].tournament.name + '</span></div>' +
-                '</div>';
+                '<div class="lgamerow" data-lg-id="' + league_id + '"><div class="gameheader spoiler"  data-lg-id="' + league_id + '">'+
+                '<div class="badge league"><span class="fi fi-'+flaglow+'"></span><span>' + tourname+ '</span></div><div class="badge league"><span class="cric">' + tour + '</span></div>' +
+                '</div></div>';
 
             $('.gamescontainer').append(leagueSpoiler);
 
 
             $.each(data, function(event,edata) {
+                let status = edata.status.description;
+                let hometeam = edata.homeTeam.name;
+                let homescore = edata.homeScore.current;
+                let awayscore = edata.awayScore.current;
+                let awayteam = edata.awayTeam.name;
 
 
-                var hometeam = edata.homeTeam.name;
-                var homescore = edata.homeScore.current;
-                var awayscore = edata.awayScore.current;
-                var awayteam = edata.awayTeam.name;
-                $('.gamescontainer').append(hometeam+' - '+awayteam+'<br>');
+
+                $('.gamescontainer .lgamerow[data-lg-id="' + league_id + '"]').append('<div class="gamecontent"><div class="leaguefullname">'+tour+'</div><div class="singlegame">'+status+'<br>'+hometeam+' - '+homescore+' <br> '+awayteam+' - '+awayscore+'</div></div>');
             });
+
        });
     });
 

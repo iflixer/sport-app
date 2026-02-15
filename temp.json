@@ -1,0 +1,2932 @@
+{
+  "events": [
+    {
+      "tournament": {
+        "name": "Big Bash League, Playoffs",
+        "slug": "big-bash-league-playoffs",
+        "category": {
+          "name": "Australia",
+          "slug": "australia",
+          "sport": {
+            "name": "Cricket",
+            "slug": "cricket",
+            "id": 62
+          },
+          "id": 1347,
+          "country": {
+            "alpha2": "AU",
+            "alpha3": "AUS",
+            "name": "Australia",
+            "slug": "australia"
+          },
+          "flag": "australia",
+          "alpha2": "AU"
+        },
+        "uniqueTournament": {
+          "name": "Big Bash League",
+          "slug": "big-bash-league",
+          "category": {
+            "name": "Australia",
+            "slug": "australia",
+            "sport": {
+              "name": "Cricket",
+              "slug": "cricket",
+              "id": 62
+            },
+            "id": 1347,
+            "country": {
+              "alpha2": "AU",
+              "alpha3": "AUS",
+              "name": "Australia",
+              "slug": "australia"
+            },
+            "flag": "australia",
+            "alpha2": "AU"
+          },
+          "userCount": 4294,
+          "id": 11162,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دوري بيج باش",
+              "hi": "बिग बैश लीग",
+              "bn": "বিগ ব্যাশ লীগ"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 111183
+      },
+      "season": {
+        "name": "Big Bash League, 2024/25",
+        "year": "2024/2025",
+        "editor": false,
+        "id": 63841
+      },
+      "customId": "jfAbsofAb",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 1,
+      "homeTeam": {
+        "name": "Hobart Hurricanes",
+        "slug": "hobart-hurricanes",
+        "shortName": "HUR",
+        "gender": "M",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 749,
+        "nameCode": "HHU",
+        "national": false,
+        "type": 0,
+        "id": 187759,
+        "country": {
+          "alpha2": "AU",
+          "alpha3": "AUS",
+          "name": "Australia",
+          "slug": "australia"
+        },
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "هوبارت هوريكاينز",
+            "hi": "होबार्ट हरिकेंस",
+            "bn": "হোবার্ট হারিকেনস"
+          },
+          "shortNameTranslation": {
+            "ar": "هوبارت هوريكاينز",
+            "hi": "एचयूआर",
+            "bn": "এইচইউআর"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Sydney Sixers",
+        "slug": "sydney-sixers",
+        "shortName": "SIX",
+        "gender": "M",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 1223,
+        "nameCode": "SSI",
+        "national": false,
+        "type": 0,
+        "id": 187764,
+        "country": {
+          "alpha2": "AU",
+          "alpha3": "AUS",
+          "name": "Australia",
+          "slug": "australia"
+        },
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "سيدني سيكسرز",
+            "hi": "सिडनी सिक्सर्स",
+            "bn": "সিডনি সিক্সার্স"
+          },
+          "shortNameTranslation": {
+            "ar": "سيكس",
+            "hi": "एसआई",
+            "bn": "সিক্স"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 173,
+        "display": 173,
+        "innings": {
+          "inning1": {
+            "score": 173,
+            "wickets": 7,
+            "overs": 20,
+            "runRate": 8.65
+          }
+        }
+      },
+      "awayScore": {
+        "current": 161,
+        "display": 161,
+        "innings": {
+          "inning1": {
+            "score": 161,
+            "wickets": 5,
+            "overs": 20,
+            "runRate": 8.05,
+            "targetRunRate": 8.7
+          }
+        }
+      },
+      "coverage": 1,
+      "time": {},
+      "changes": {
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1737460395
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 13354363,
+      "note": "Hobart Hurricanes beat Sydney Sixers by 12 runs",
+      "currentBattingTeamId": 187764,
+      "endTimestamp": 1737460320,
+      "startTimestamp": 1737448200,
+      "slug": "sydney-sixers-hobart-hurricanes",
+      "periods": {
+        "current": "Match",
+        "inning1": "1st Inning",
+        "inning2": "2nd Inning",
+        "inning3": "3rd Inning",
+        "inning4": "4th Inning"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "Big Bash League, Playoffs",
+        "slug": "big-bash-league-playoffs",
+        "category": {
+          "name": "Australia",
+          "slug": "australia",
+          "sport": {
+            "name": "Cricket",
+            "slug": "cricket",
+            "id": 62
+          },
+          "id": 1347,
+          "country": {
+            "alpha2": "AU",
+            "alpha3": "AUS",
+            "name": "Australia",
+            "slug": "australia"
+          },
+          "flag": "australia",
+          "alpha2": "AU"
+        },
+        "uniqueTournament": {
+          "name": "Big Bash League",
+          "slug": "big-bash-league",
+          "category": {
+            "name": "Australia",
+            "slug": "australia",
+            "sport": {
+              "name": "Cricket",
+              "slug": "cricket",
+              "id": 62
+            },
+            "id": 1347,
+            "country": {
+              "alpha2": "AU",
+              "alpha3": "AUS",
+              "name": "Australia",
+              "slug": "australia"
+            },
+            "flag": "australia",
+            "alpha2": "AU"
+          },
+          "userCount": 4294,
+          "id": 11162,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دوري بيج باش",
+              "hi": "बिग बैश लीग",
+              "bn": "বিগ ব্যাশ লীগ"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 111183
+      },
+      "season": {
+        "name": "Big Bash League, 2024/25",
+        "year": "2024/2025",
+        "editor": false,
+        "id": 63841
+      },
+      "customId": "ifAbsmfAb",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Sydney Thunder",
+        "slug": "sydney-thunder",
+        "shortName": "THU",
+        "gender": "M",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 872,
+        "nameCode": "STH",
+        "national": false,
+        "type": 0,
+        "id": 187758,
+        "country": {
+          "alpha2": "AU",
+          "alpha3": "AUS",
+          "name": "Australia",
+          "slug": "australia"
+        },
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "سيدني ثاندر",
+            "hi": "सिडनी थंडर",
+            "bn": "সিডনি থান্ডার"
+          },
+          "shortNameTranslation": {
+            "ar": "سيدني ثاندر",
+            "hi": "टीएचयू",
+            "bn": "টিএইচইউ"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Melbourne Stars",
+        "slug": "melbourne-stars",
+        "shortName": "STA",
+        "gender": "M",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 1110,
+        "nameCode": "MST",
+        "national": false,
+        "type": 0,
+        "id": 187762,
+        "country": {
+          "alpha2": "AU",
+          "alpha3": "AUS",
+          "name": "Australia",
+          "slug": "australia"
+        },
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "ملبورن ستارز",
+            "hi": "मेलबर्न स्टार्स",
+            "bn": "মেলবোর্ন স্টারস"
+          },
+          "shortNameTranslation": {
+            "ar": "ملبورن ستارز",
+            "hi": "एसटीए",
+            "bn": "এসটিএ"
+          }
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "coverage": 1,
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 13358997,
+      "endTimestamp": 1737549000,
+      "startTimestamp": 1737534600,
+      "slug": "melbourne-stars-sydney-thunder",
+      "periods": {
+        "current": "Match",
+        "inning1": "1st Inning",
+        "inning2": "2nd Inning",
+        "inning3": "3rd Inning",
+        "inning4": "4th Inning"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "Bangladesh Premier League",
+        "slug": "bangladesh-premier-league",
+        "category": {
+          "name": "Bangladesh",
+          "slug": "bangladesh",
+          "sport": {
+            "name": "Cricket",
+            "slug": "cricket",
+            "id": 62
+          },
+          "id": 1348,
+          "country": {
+            "alpha2": "BD",
+            "alpha3": "BGD",
+            "name": "Bangladesh",
+            "slug": "bangladesh"
+          },
+          "flag": "bangladesh",
+          "alpha2": "BD"
+        },
+        "uniqueTournament": {
+          "name": "Bangladesh Premier League",
+          "slug": "bangladesh-premier-league",
+          "category": {
+            "name": "Bangladesh",
+            "slug": "bangladesh",
+            "sport": {
+              "name": "Cricket",
+              "slug": "cricket",
+              "id": 62
+            },
+            "id": 1348,
+            "country": {
+              "alpha2": "BD",
+              "alpha3": "BGD",
+              "name": "Bangladesh",
+              "slug": "bangladesh"
+            },
+            "flag": "bangladesh",
+            "alpha2": "BD"
+          },
+          "userCount": 7898,
+          "id": 11164,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "الدوري البنغلاديشي الممتاز",
+              "hi": "बांग्लादेश प्रीमियर लीग",
+              "bn": "বাংলাদেশ প্রিমিয়ার লীগ"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 110458
+      },
+      "season": {
+        "name": "Bangladesh Premier League, 2024/25",
+        "year": "2024/2025",
+        "editor": false,
+        "id": 68874
+      },
+      "customId": "EzQdsvBAh",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 2,
+      "homeTeam": {
+        "name": "Durbar Rajshahi",
+        "slug": "durbar-rajshahi",
+        "shortName": "DBR",
+        "gender": "M",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 697,
+        "nameCode": "DRA",
+        "national": false,
+        "type": 0,
+        "id": 938820,
+        "country": {},
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Chittagong Kings",
+        "slug": "chittagong-kings",
+        "shortName": "CHK",
+        "gender": "M",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 741,
+        "nameCode": "CKI",
+        "national": false,
+        "type": 0,
+        "id": 478729,
+        "country": {},
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {
+        "current": 80,
+        "display": 80,
+        "innings": {
+          "inning1": {
+            "score": 80,
+            "wickets": 10,
+            "overs": 14.2,
+            "runRate": 5.58,
+            "targetRunRate": 9.6
+          }
+        }
+      },
+      "awayScore": {
+        "current": 191,
+        "display": 191,
+        "innings": {
+          "inning1": {
+            "score": 191,
+            "wickets": 8,
+            "overs": 20,
+            "runRate": 9.55
+          }
+        }
+      },
+      "coverage": 1,
+      "time": {},
+      "changes": {
+        "changes": [
+          "homeScore.innings",
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1737387377
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 13117278,
+      "note": "Chittagong Kings beat Durbar Rajshahi by 111 runs",
+      "currentBattingTeamId": 938820,
+      "endTimestamp": 1737387360,
+      "startTimestamp": 1737376200,
+      "slug": "durbar-rajshahi-chittagong-kings",
+      "periods": {
+        "current": "Match",
+        "inning1": "1st Inning",
+        "inning2": "2nd Inning",
+        "inning3": "3rd Inning",
+        "inning4": "4th Inning"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "Bangladesh Premier League",
+        "slug": "bangladesh-premier-league",
+        "category": {
+          "name": "Bangladesh",
+          "slug": "bangladesh",
+          "sport": {
+            "name": "Cricket",
+            "slug": "cricket",
+            "id": 62
+          },
+          "id": 1348,
+          "country": {
+            "alpha2": "BD",
+            "alpha3": "BGD",
+            "name": "Bangladesh",
+            "slug": "bangladesh"
+          },
+          "flag": "bangladesh",
+          "alpha2": "BD"
+        },
+        "uniqueTournament": {
+          "name": "Bangladesh Premier League",
+          "slug": "bangladesh-premier-league",
+          "category": {
+            "name": "Bangladesh",
+            "slug": "bangladesh",
+            "sport": {
+              "name": "Cricket",
+              "slug": "cricket",
+              "id": 62
+            },
+            "id": 1348,
+            "country": {
+              "alpha2": "BD",
+              "alpha3": "BGD",
+              "name": "Bangladesh",
+              "slug": "bangladesh"
+            },
+            "flag": "bangladesh",
+            "alpha2": "BD"
+          },
+          "userCount": 7898,
+          "id": 11164,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "الدوري البنغلاديشي الممتاز",
+              "hi": "बांग्लादेश प्रीमियर लीग",
+              "bn": "বাংলাদেশ প্রিমিয়ার লীগ"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 110458
+      },
+      "season": {
+        "name": "Bangladesh Premier League, 2024/25",
+        "year": "2024/2025",
+        "editor": false,
+        "id": 68874
+      },
+      "customId": "JUIdsEzQd",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Dhaka Capitals",
+        "slug": "durdanto-dhaka",
+        "shortName": "DC",
+        "gender": "M",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 1593,
+        "nameCode": "DCA",
+        "national": false,
+        "type": 0,
+        "id": 459734,
+        "country": {},
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Chittagong Kings",
+        "slug": "chittagong-kings",
+        "shortName": "CHK",
+        "gender": "M",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 741,
+        "nameCode": "CKI",
+        "national": false,
+        "type": 0,
+        "id": 478729,
+        "country": {},
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "coverage": 1,
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 13117279,
+      "endTimestamp": 1737545400,
+      "startTimestamp": 1737531000,
+      "slug": "chittagong-kings-dhaka-capitals",
+      "periods": {
+        "current": "Match",
+        "inning1": "1st Inning",
+        "inning2": "2nd Inning",
+        "inning3": "3rd Inning",
+        "inning4": "4th Inning"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "Dream11 Super Smash",
+        "slug": "dream11-super-smash",
+        "category": {
+          "name": "New Zealand",
+          "slug": "new-zealand",
+          "sport": {
+            "name": "Cricket",
+            "slug": "cricket",
+            "id": 62
+          },
+          "id": 1354,
+          "country": {
+            "alpha2": "NZ",
+            "alpha3": "NZL",
+            "name": "New Zealand",
+            "slug": "new-zealand"
+          },
+          "flag": "new-zealand",
+          "alpha2": "NZ"
+        },
+        "uniqueTournament": {
+          "name": "Super Smash",
+          "slug": "super-smash",
+          "category": {
+            "name": "New Zealand",
+            "slug": "new-zealand",
+            "sport": {
+              "name": "Cricket",
+              "slug": "cricket",
+              "id": 62
+            },
+            "id": 1354,
+            "country": {
+              "alpha2": "NZ",
+              "alpha3": "NZL",
+              "name": "New Zealand",
+              "slug": "new-zealand"
+            },
+            "flag": "new-zealand",
+            "alpha2": "NZ"
+          },
+          "userCount": 605,
+          "id": 11166,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "سوبر سماش",
+              "hi": "सुपर स्मैश",
+              "bn": "সুপার স্ম্যাশ"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 105899
+      },
+      "season": {
+        "name": "Dream11 Super Smash, 2024/25",
+        "year": "2024/2025",
+        "editor": false,
+        "id": 67266
+      },
+      "customId": "DfAbsYLWb",
+      "status": {
+        "code": 90,
+        "description": "Abandoned",
+        "type": "canceled"
+      },
+      "homeTeam": {
+        "name": "Northern Districts",
+        "slug": "northern-districts",
+        "shortName": "ND",
+        "gender": "M",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 210,
+        "nameCode": "NDI",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 187778,
+        "country": {},
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "المناطق الشمالية",
+            "hi": "नॉर्दर्न डिस्ट्रिक्ट्स",
+            "bn": "উত্তর জেলাসমূহ"
+          },
+          "shortNameTranslation": {
+            "ar": "المناطق الشمالية",
+            "hi": "एनडी",
+            "bn": "এনডি"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Central Stags",
+        "slug": "central-stags",
+        "shortName": "CS",
+        "gender": "M",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 190,
+        "nameCode": "CST",
+        "national": false,
+        "type": 0,
+        "id": 241848,
+        "country": {
+          "alpha2": "NZ",
+          "alpha3": "NZL",
+          "name": "New Zealand",
+          "slug": "new-zealand"
+        },
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "سنترال ستاغز",
+            "hi": "सेंट्रल स्टैग्स",
+            "bn": "কেন্দ্রীয় স্ট্যাগস"
+          },
+          "shortNameTranslation": {
+            "ar": "سنترال ستاغز",
+            "hi": "सीएस",
+            "bn": "সিএস"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
+      "coverage": 2,
+      "time": {},
+      "changes": {
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.innings",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.innings"
+        ],
+        "changeTimestamp": 1737441015
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 12900802,
+      "endTimestamp": 1737449700,
+      "startTimestamp": 1737435300,
+      "slug": "central-stags-northern-districts",
+      "periods": {
+        "current": "Match",
+        "inning1": "1st Inning",
+        "inning2": "2nd Inning",
+        "inning3": "3rd Inning",
+        "inning4": "4th Inning"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "Dream11 Super Smash",
+        "slug": "dream11-super-smash",
+        "category": {
+          "name": "New Zealand",
+          "slug": "new-zealand",
+          "sport": {
+            "name": "Cricket",
+            "slug": "cricket",
+            "id": 62
+          },
+          "id": 1354,
+          "country": {
+            "alpha2": "NZ",
+            "alpha3": "NZL",
+            "name": "New Zealand",
+            "slug": "new-zealand"
+          },
+          "flag": "new-zealand",
+          "alpha2": "NZ"
+        },
+        "uniqueTournament": {
+          "name": "Super Smash",
+          "slug": "super-smash",
+          "category": {
+            "name": "New Zealand",
+            "slug": "new-zealand",
+            "sport": {
+              "name": "Cricket",
+              "slug": "cricket",
+              "id": 62
+            },
+            "id": 1354,
+            "country": {
+              "alpha2": "NZ",
+              "alpha3": "NZL",
+              "name": "New Zealand",
+              "slug": "new-zealand"
+            },
+            "flag": "new-zealand",
+            "alpha2": "NZ"
+          },
+          "userCount": 605,
+          "id": 11166,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "سوبر سماش",
+              "hi": "सुपर स्मैश",
+              "bn": "সুপার স্ম্যাশ"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 105899
+      },
+      "season": {
+        "name": "Dream11 Super Smash, 2024/25",
+        "year": "2024/2025",
+        "editor": false,
+        "id": 67266
+      },
+      "customId": "WLWbsXLWb",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Wellington Firebirds",
+        "slug": "wellington-firebirds",
+        "shortName": "WF",
+        "gender": "M",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 228,
+        "nameCode": "WFI",
+        "national": false,
+        "type": 0,
+        "id": 241847,
+        "country": {
+          "alpha2": "NZ",
+          "alpha3": "NZL",
+          "name": "New Zealand",
+          "slug": "new-zealand"
+        },
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "ولينغتون فايربيردز",
+            "hi": "वेलिंगटन फायरबर्ड्स",
+            "bn": "ওয়েলিংটন ফায়ারবার্ডস"
+          },
+          "shortNameTranslation": {
+            "ar": "ولينغتون فايربيردز",
+            "hi": "डब्ल्यूएफ",
+            "bn": "ডব্লিউএফ"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Canterbury",
+        "slug": "canterbury",
+        "shortName": "CTB",
+        "gender": "M",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 246,
+        "nameCode": "CAN",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 241846,
+        "country": {
+          "alpha2": "NZ",
+          "alpha3": "NZL",
+          "name": "New Zealand",
+          "slug": "new-zealand"
+        },
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كانتربري",
+            "hi": "कैंटरबरी",
+            "bn": "ক্যান্টারবেরি"
+          },
+          "shortNameTranslation": {
+            "ar": "كانتربري",
+            "hi": "सीटीबी",
+            "bn": "সিটিবি"
+          }
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "coverage": 2,
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 12900804,
+      "endTimestamp": 1737530700,
+      "startTimestamp": 1737516300,
+      "slug": "wellington-firebirds-canterbury",
+      "periods": {
+        "current": "Match",
+        "inning1": "1st Inning",
+        "inning2": "2nd Inning",
+        "inning3": "3rd Inning",
+        "inning4": "4th Inning"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "Dream11 Women's Super Smash",
+        "slug": "dream11-womens-super-smash",
+        "category": {
+          "name": "New Zealand",
+          "slug": "new-zealand",
+          "sport": {
+            "name": "Cricket",
+            "slug": "cricket",
+            "id": 62
+          },
+          "id": 1354,
+          "country": {
+            "alpha2": "NZ",
+            "alpha3": "NZL",
+            "name": "New Zealand",
+            "slug": "new-zealand"
+          },
+          "flag": "new-zealand",
+          "alpha2": "NZ"
+        },
+        "uniqueTournament": {
+          "name": "Women's Super Smash",
+          "slug": "womens-super-smash",
+          "category": {
+            "name": "New Zealand",
+            "slug": "new-zealand",
+            "sport": {
+              "name": "Cricket",
+              "slug": "cricket",
+              "id": 62
+            },
+            "id": 1354,
+            "country": {
+              "alpha2": "NZ",
+              "alpha3": "NZL",
+              "name": "New Zealand",
+              "slug": "new-zealand"
+            },
+            "flag": "new-zealand",
+            "alpha2": "NZ"
+          },
+          "userCount": 304,
+          "id": 19209,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 105920
+      },
+      "season": {
+        "name": "Dream11 Women's Super Smash, 2024/25",
+        "year": "2024/2025",
+        "editor": false,
+        "id": 67265
+      },
+      "customId": "gFpdsZiEd",
+      "status": {
+        "code": 90,
+        "description": "Abandoned",
+        "type": "canceled"
+      },
+      "homeTeam": {
+        "name": "Northern Brave Women",
+        "slug": "northern-brave-women",
+        "shortName": "NB-W",
+        "gender": "F",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 97,
+        "nameCode": "NBW",
+        "national": false,
+        "type": 0,
+        "id": 414006,
+        "country": {},
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Central Hinds",
+        "slug": "central-hinds",
+        "shortName": "CH-W",
+        "gender": "F",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 125,
+        "nameCode": "CHI",
+        "national": false,
+        "type": 0,
+        "id": 447949,
+        "country": {},
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
+      "coverage": 2,
+      "time": {},
+      "changes": {
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.innings",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.innings"
+        ],
+        "changeTimestamp": 1737427334
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 12900801,
+      "note": "Match Abandoned",
+      "endTimestamp": 1737436200,
+      "startTimestamp": 1737421800,
+      "slug": "central-hinds-northern-brave-women",
+      "periods": {
+        "current": "Match",
+        "inning1": "1st Inning",
+        "inning2": "2nd Inning",
+        "inning3": "3rd Inning",
+        "inning4": "4th Inning"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "Dream11 Women's Super Smash",
+        "slug": "dream11-womens-super-smash",
+        "category": {
+          "name": "New Zealand",
+          "slug": "new-zealand",
+          "sport": {
+            "name": "Cricket",
+            "slug": "cricket",
+            "id": 62
+          },
+          "id": 1354,
+          "country": {
+            "alpha2": "NZ",
+            "alpha3": "NZL",
+            "name": "New Zealand",
+            "slug": "new-zealand"
+          },
+          "flag": "new-zealand",
+          "alpha2": "NZ"
+        },
+        "uniqueTournament": {
+          "name": "Women's Super Smash",
+          "slug": "womens-super-smash",
+          "category": {
+            "name": "New Zealand",
+            "slug": "new-zealand",
+            "sport": {
+              "name": "Cricket",
+              "slug": "cricket",
+              "id": 62
+            },
+            "id": 1354,
+            "country": {
+              "alpha2": "NZ",
+              "alpha3": "NZL",
+              "name": "New Zealand",
+              "slug": "new-zealand"
+            },
+            "flag": "new-zealand",
+            "alpha2": "NZ"
+          },
+          "userCount": 304,
+          "id": 19209,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 105920
+      },
+      "season": {
+        "name": "Dream11 Women's Super Smash, 2024/25",
+        "year": "2024/2025",
+        "editor": false,
+        "id": 67265
+      },
+      "customId": "iFpdsYiEd",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Wellington Blaze",
+        "slug": "wellington-blaze",
+        "shortName": "WB-W",
+        "gender": "F",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 150,
+        "nameCode": "WBL",
+        "national": false,
+        "type": 0,
+        "id": 414008,
+        "country": {},
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Canterbury Magicians",
+        "slug": "canterbury-magicians",
+        "shortName": "CM-W",
+        "gender": "F",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 127,
+        "nameCode": "CMA",
+        "national": false,
+        "type": 0,
+        "id": 447948,
+        "country": {},
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "coverage": 2,
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 12900803,
+      "endTimestamp": 1737517200,
+      "startTimestamp": 1737502800,
+      "slug": "canterbury-magicians-wellington-blaze",
+      "periods": {
+        "current": "Match",
+        "inning1": "1st Inning",
+        "inning2": "2nd Inning",
+        "inning3": "3rd Inning",
+        "inning4": "4th Inning"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "President's Cup Grade-I",
+        "slug": "presidents-cup-grade-i",
+        "category": {
+          "name": "Pakistan",
+          "slug": "pakistan",
+          "sport": {
+            "name": "Cricket",
+            "slug": "cricket",
+            "id": 62
+          },
+          "id": 1352,
+          "country": {
+            "alpha2": "PK",
+            "alpha3": "PAK",
+            "name": "Pakistan",
+            "slug": "pakistan"
+          },
+          "flag": "pakistan",
+          "alpha2": "PK"
+        },
+        "uniqueTournament": {
+          "name": "President's Cup Grade-I",
+          "slug": "presidents-cup-grade-i",
+          "category": {
+            "name": "Pakistan",
+            "slug": "pakistan",
+            "sport": {
+              "name": "Cricket",
+              "slug": "cricket",
+              "id": 62
+            },
+            "id": 1352,
+            "country": {
+              "alpha2": "PK",
+              "alpha3": "PAK",
+              "name": "Pakistan",
+              "slug": "pakistan"
+            },
+            "flag": "pakistan",
+            "alpha2": "PK"
+          },
+          "userCount": 24,
+          "id": 22414,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 129898
+      },
+      "season": {
+        "name": "President's Cup Grade-I, 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 70602
+      },
+      "customId": "OghesUghe",
+      "status": {
+        "code": 141,
+        "description": "End of day 1",
+        "type": "willcontinue"
+      },
+      "homeTeam": {
+        "name": "Ghani Glass",
+        "slug": "ghani-glass",
+        "shortName": "GG",
+        "gender": "M",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 6,
+        "nameCode": "GGL",
+        "national": false,
+        "type": 0,
+        "id": 517839,
+        "country": {},
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Higher Education Commission",
+        "slug": "higher-education-commission",
+        "shortName": "HEC",
+        "gender": "M",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 6,
+        "nameCode": "HEC",
+        "national": false,
+        "type": 0,
+        "id": 517844,
+        "country": {},
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {
+        "current": 179,
+        "display": 179,
+        "innings": {
+          "inning1": {
+            "score": 179,
+            "wickets": 9,
+            "overs": 35.5,
+            "runRate": 5
+          }
+        }
+      },
+      "awayScore": {
+        "current": 140,
+        "display": 140,
+        "innings": {
+          "inning1": {
+            "score": 140,
+            "wickets": 10,
+            "overs": 45.5,
+            "runRate": 3.05
+          }
+        }
+      },
+      "coverage": 3,
+      "time": {},
+      "changes": {
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1737461951
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 13311829,
+      "endTimestamp": 1737633600,
+      "startTimestamp": 1737349200,
+      "slug": "higher-education-commission-ghani-glass",
+      "periods": {
+        "current": "Match",
+        "inning1": "1st Inning",
+        "inning2": "2nd Inning",
+        "inning3": "3rd Inning",
+        "inning4": "4th Inning"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "President's Cup Grade-I",
+        "slug": "presidents-cup-grade-i",
+        "category": {
+          "name": "Pakistan",
+          "slug": "pakistan",
+          "sport": {
+            "name": "Cricket",
+            "slug": "cricket",
+            "id": 62
+          },
+          "id": 1352,
+          "country": {
+            "alpha2": "PK",
+            "alpha3": "PAK",
+            "name": "Pakistan",
+            "slug": "pakistan"
+          },
+          "flag": "pakistan",
+          "alpha2": "PK"
+        },
+        "uniqueTournament": {
+          "name": "President's Cup Grade-I",
+          "slug": "presidents-cup-grade-i",
+          "category": {
+            "name": "Pakistan",
+            "slug": "pakistan",
+            "sport": {
+              "name": "Cricket",
+              "slug": "cricket",
+              "id": 62
+            },
+            "id": 1352,
+            "country": {
+              "alpha2": "PK",
+              "alpha3": "PAK",
+              "name": "Pakistan",
+              "slug": "pakistan"
+            },
+            "flag": "pakistan",
+            "alpha2": "PK"
+          },
+          "userCount": 24,
+          "id": 22414,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 129898
+      },
+      "season": {
+        "name": "President's Cup Grade-I, 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 70602
+      },
+      "customId": "RghesZpxh",
+      "status": {
+        "code": 141,
+        "description": "End of day 1",
+        "type": "willcontinue"
+      },
+      "homeTeam": {
+        "name": "Oil & Gas Development Company Limited",
+        "slug": "oil-and-gas-development-company-limited",
+        "shortName": "OGDCL",
+        "gender": "M",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 2,
+        "nameCode": "OGD",
+        "national": false,
+        "type": 0,
+        "id": 930799,
+        "country": {},
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Water and Power Development Authority",
+        "slug": "water-and-power-development-authority",
+        "shortName": "WAPDA",
+        "gender": "M",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 6,
+        "nameCode": "WAP",
+        "national": false,
+        "type": 0,
+        "id": 517842,
+        "country": {},
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {
+        "current": 265,
+        "display": 265,
+        "innings": {
+          "inning1": {
+            "score": 265,
+            "wickets": 5,
+            "overs": 90,
+            "runRate": 2.94
+          }
+        }
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
+      "coverage": 3,
+      "time": {},
+      "changes": {
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1737399070
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 13311827,
+      "endTimestamp": 1737633600,
+      "startTimestamp": 1737349200,
+      "slug": "oil-and-gas-development-company-limited-water-and-power-development-authority",
+      "periods": {
+        "current": "Match",
+        "inning1": "1st Inning",
+        "inning2": "2nd Inning",
+        "inning3": "3rd Inning",
+        "inning4": "4th Inning"
+      },
+      "finalResultOnly": true,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "President's Cup Grade-I",
+        "slug": "presidents-cup-grade-i",
+        "category": {
+          "name": "Pakistan",
+          "slug": "pakistan",
+          "sport": {
+            "name": "Cricket",
+            "slug": "cricket",
+            "id": 62
+          },
+          "id": 1352,
+          "country": {
+            "alpha2": "PK",
+            "alpha3": "PAK",
+            "name": "Pakistan",
+            "slug": "pakistan"
+          },
+          "flag": "pakistan",
+          "alpha2": "PK"
+        },
+        "uniqueTournament": {
+          "name": "President's Cup Grade-I",
+          "slug": "presidents-cup-grade-i",
+          "category": {
+            "name": "Pakistan",
+            "slug": "pakistan",
+            "sport": {
+              "name": "Cricket",
+              "slug": "cricket",
+              "id": 62
+            },
+            "id": 1352,
+            "country": {
+              "alpha2": "PK",
+              "alpha3": "PAK",
+              "name": "Pakistan",
+              "slug": "pakistan"
+            },
+            "flag": "pakistan",
+            "alpha2": "PK"
+          },
+          "userCount": 24,
+          "id": 22414,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 129898
+      },
+      "season": {
+        "name": "President's Cup Grade-I, 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 70602
+      },
+      "customId": "PghesTghe",
+      "status": {
+        "code": 141,
+        "description": "End of day 1",
+        "type": "willcontinue"
+      },
+      "homeTeam": {
+        "name": "Pakistan Television",
+        "slug": "pakistan-television",
+        "shortName": "PTV",
+        "gender": "M",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 6,
+        "nameCode": "PTE",
+        "national": false,
+        "type": 0,
+        "id": 517840,
+        "country": {},
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Khan Research Laboratories",
+        "slug": "khan-research-laboratories",
+        "shortName": "KRL",
+        "gender": "M",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 7,
+        "nameCode": "KRL",
+        "national": false,
+        "type": 0,
+        "id": 517843,
+        "country": {},
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {
+        "current": 335,
+        "display": 335,
+        "innings": {
+          "inning1": {
+            "score": 335,
+            "wickets": 10,
+            "overs": 85.3,
+            "runRate": 3.92
+          }
+        }
+      },
+      "awayScore": {
+        "current": 3,
+        "display": 3,
+        "innings": {
+          "inning1": {
+            "score": 3,
+            "wickets": 1,
+            "overs": 2,
+            "runRate": 1.5
+          }
+        }
+      },
+      "coverage": 3,
+      "time": {},
+      "changes": {
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.innings"
+        ],
+        "changeTimestamp": 1737399731
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 13311826,
+      "endTimestamp": 1737633600,
+      "startTimestamp": 1737349200,
+      "slug": "khan-research-laboratories-pakistan-television",
+      "periods": {
+        "current": "Match",
+        "inning1": "1st Inning",
+        "inning2": "2nd Inning",
+        "inning3": "3rd Inning",
+        "inning4": "4th Inning"
+      },
+      "finalResultOnly": true,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "President's Cup Grade-I",
+        "slug": "presidents-cup-grade-i",
+        "category": {
+          "name": "Pakistan",
+          "slug": "pakistan",
+          "sport": {
+            "name": "Cricket",
+            "slug": "cricket",
+            "id": 62
+          },
+          "id": 1352,
+          "country": {
+            "alpha2": "PK",
+            "alpha3": "PAK",
+            "name": "Pakistan",
+            "slug": "pakistan"
+          },
+          "flag": "pakistan",
+          "alpha2": "PK"
+        },
+        "uniqueTournament": {
+          "name": "President's Cup Grade-I",
+          "slug": "presidents-cup-grade-i",
+          "category": {
+            "name": "Pakistan",
+            "slug": "pakistan",
+            "sport": {
+              "name": "Cricket",
+              "slug": "cricket",
+              "id": 62
+            },
+            "id": 1352,
+            "country": {
+              "alpha2": "PK",
+              "alpha3": "PAK",
+              "name": "Pakistan",
+              "slug": "pakistan"
+            },
+            "flag": "pakistan",
+            "alpha2": "PK"
+          },
+          "userCount": 24,
+          "id": 22414,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 129898
+      },
+      "season": {
+        "name": "President's Cup Grade-I, 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 70602
+      },
+      "customId": "NghesQghe",
+      "status": {
+        "code": 141,
+        "description": "End of day 1",
+        "type": "willcontinue"
+      },
+      "homeTeam": {
+        "name": "Sui Northern Gas Pipelines Limited",
+        "slug": "sui-northern-gas-pipelines-limited",
+        "shortName": "SNGPL",
+        "gender": "M",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 6,
+        "nameCode": "SNG",
+        "national": false,
+        "type": 0,
+        "id": 517838,
+        "country": {},
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "State Bank of Pakistan",
+        "slug": "state-bank-of-pakistan",
+        "shortName": "SBP",
+        "gender": "M",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 6,
+        "nameCode": "SBO",
+        "national": false,
+        "type": 0,
+        "id": 517841,
+        "country": {},
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {
+        "current": 242,
+        "display": 242,
+        "innings": {
+          "inning1": {
+            "score": 242,
+            "wickets": 10,
+            "overs": 73.2,
+            "runRate": 3.3
+          }
+        }
+      },
+      "awayScore": {
+        "current": 71,
+        "display": 71,
+        "innings": {
+          "inning1": {
+            "score": 71,
+            "wickets": 2,
+            "overs": 14,
+            "runRate": 5.07
+          }
+        }
+      },
+      "coverage": 3,
+      "time": {},
+      "changes": {
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.innings"
+        ],
+        "changeTimestamp": 1737399015
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 13310824,
+      "endTimestamp": 1737633600,
+      "startTimestamp": 1737349200,
+      "slug": "state-bank-of-pakistan-sui-northern-gas-pipelines-limited",
+      "periods": {
+        "current": "Match",
+        "inning1": "1st Inning",
+        "inning2": "2nd Inning",
+        "inning3": "3rd Inning",
+        "inning4": "4th Inning"
+      },
+      "finalResultOnly": true,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "SA20 League",
+        "slug": "sa20-league",
+        "category": {
+          "name": "South Africa",
+          "slug": "south-africa",
+          "sport": {
+            "name": "Cricket",
+            "slug": "cricket",
+            "id": 62
+          },
+          "id": 1355,
+          "country": {
+            "alpha2": "ZA",
+            "alpha3": "ZAF",
+            "name": "South Africa",
+            "slug": "south-africa"
+          },
+          "flag": "south-africa",
+          "alpha2": "ZA"
+        },
+        "uniqueTournament": {
+          "name": "SA20 league",
+          "slug": "sa20-league",
+          "category": {
+            "name": "South Africa",
+            "slug": "south-africa",
+            "sport": {
+              "name": "Cricket",
+              "slug": "cricket",
+              "id": 62
+            },
+            "id": 1355,
+            "country": {
+              "alpha2": "ZA",
+              "alpha3": "ZAF",
+              "name": "South Africa",
+              "slug": "south-africa"
+            },
+            "flag": "south-africa",
+            "alpha2": "ZA"
+          },
+          "userCount": 2110,
+          "id": 19635,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 109706
+      },
+      "season": {
+        "name": "SA20 League, 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 66288
+      },
+      "customId": "XLHdsZLHd",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 1,
+      "homeTeam": {
+        "name": "Paarl Royals",
+        "slug": "paarl-royals",
+        "shortName": "PR",
+        "gender": "M",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 405,
+        "nameCode": "PRO",
+        "national": false,
+        "type": 0,
+        "id": 456847,
+        "country": {},
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Joburg Super Kings",
+        "slug": "joburg-super-kings",
+        "shortName": "JSK",
+        "gender": "M",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 514,
+        "nameCode": "JSK",
+        "national": false,
+        "type": 0,
+        "id": 456849,
+        "country": {},
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {
+        "current": 150,
+        "display": 150,
+        "innings": {
+          "inning1": {
+            "score": 150,
+            "wickets": 4,
+            "overs": 19.1,
+            "runRate": 7.83,
+            "targetRunRate": 7.35
+          }
+        }
+      },
+      "awayScore": {
+        "current": 146,
+        "display": 146,
+        "innings": {
+          "inning1": {
+            "score": 146,
+            "wickets": 6,
+            "overs": 20,
+            "runRate": 7.3
+          }
+        }
+      },
+      "coverage": 1,
+      "time": {},
+      "changes": {
+        "changes": [
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.innings",
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1737399628
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 12778961,
+      "note": "Paarl Royals beat Joburg Super Kings by 6 wickets",
+      "currentBattingTeamId": 456847,
+      "endTimestamp": 1737399600,
+      "startTimestamp": 1737387000,
+      "slug": "joburg-super-kings-paarl-royals",
+      "periods": {
+        "current": "Match",
+        "inning1": "1st Inning",
+        "inning2": "2nd Inning",
+        "inning3": "3rd Inning",
+        "inning4": "4th Inning"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "SA20 League",
+        "slug": "sa20-league",
+        "category": {
+          "name": "South Africa",
+          "slug": "south-africa",
+          "sport": {
+            "name": "Cricket",
+            "slug": "cricket",
+            "id": 62
+          },
+          "id": 1355,
+          "country": {
+            "alpha2": "ZA",
+            "alpha3": "ZAF",
+            "name": "South Africa",
+            "slug": "south-africa"
+          },
+          "flag": "south-africa",
+          "alpha2": "ZA"
+        },
+        "uniqueTournament": {
+          "name": "SA20 league",
+          "slug": "sa20-league",
+          "category": {
+            "name": "South Africa",
+            "slug": "south-africa",
+            "sport": {
+              "name": "Cricket",
+              "slug": "cricket",
+              "id": 62
+            },
+            "id": 1355,
+            "country": {
+              "alpha2": "ZA",
+              "alpha3": "ZAF",
+              "name": "South Africa",
+              "slug": "south-africa"
+            },
+            "flag": "south-africa",
+            "alpha2": "ZA"
+          },
+          "userCount": 2110,
+          "id": 19635,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 109706
+      },
+      "season": {
+        "name": "SA20 League, 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 66288
+      },
+      "customId": "WLHdsYLHd",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Durban's Super Giants",
+        "slug": "durbans-super-giants",
+        "shortName": "DSG",
+        "gender": "M",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 497,
+        "nameCode": "DSG",
+        "national": false,
+        "type": 0,
+        "id": 456848,
+        "country": {},
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "MI Cape Town",
+        "slug": "mi-cape-town",
+        "shortName": "MICT",
+        "gender": "M",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 659,
+        "nameCode": "MCT",
+        "national": false,
+        "type": 0,
+        "id": 456846,
+        "country": {},
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "coverage": 1,
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 12778962,
+      "endTimestamp": 1737487800,
+      "startTimestamp": 1737473400,
+      "slug": "durbans-super-giants-mi-cape-town",
+      "periods": {
+        "current": "Match",
+        "inning1": "1st Inning",
+        "inning2": "2nd Inning",
+        "inning3": "3rd Inning",
+        "inning4": "4th Inning"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "Major League Tournament, Group B",
+        "slug": "major-league-tournament-group-b",
+        "category": {
+          "name": "Sri Lanka",
+          "slug": "sri-lanka",
+          "sport": {
+            "name": "Cricket",
+            "slug": "cricket",
+            "id": 62
+          },
+          "id": 1356,
+          "country": {
+            "alpha2": "LK",
+            "alpha3": "LKA",
+            "name": "Sri Lanka",
+            "slug": "sri-lanka"
+          },
+          "flag": "sri-lanka",
+          "alpha2": "LK"
+        },
+        "uniqueTournament": {
+          "name": "Premier Trophy",
+          "slug": "premier-trophy",
+          "category": {
+            "name": "Sri Lanka",
+            "slug": "sri-lanka",
+            "sport": {
+              "name": "Cricket",
+              "slug": "cricket",
+              "id": 62
+            },
+            "id": 1356,
+            "country": {
+              "alpha2": "LK",
+              "alpha3": "LKA",
+              "name": "Sri Lanka",
+              "slug": "sri-lanka"
+            },
+            "flag": "sri-lanka",
+            "alpha2": "LK"
+          },
+          "userCount": 26,
+          "id": 19200,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 105893
+      },
+      "season": {
+        "name": "Major League Tournament, 2024/25",
+        "year": "2024/2025",
+        "editor": false,
+        "id": 70144
+      },
+      "customId": "rDqdsxDqd",
+      "status": {
+        "code": 142,
+        "description": "End of day 2",
+        "type": "willcontinue"
+      },
+      "homeTeam": {
+        "name": "Nugegoda Sports Welfare Club",
+        "slug": "nugegoda-sports-welfare-club",
+        "shortName": "NSW",
+        "gender": "M",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 9,
+        "nameCode": "NSW",
+        "national": false,
+        "type": 0,
+        "id": 416422,
+        "country": {},
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Moors Sports Club",
+        "slug": "moors-sports-club",
+        "shortName": "MSC",
+        "gender": "M",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 16,
+        "nameCode": "MSC",
+        "national": false,
+        "type": 0,
+        "id": 416417,
+        "country": {},
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 275,
+        "display": 275,
+        "innings": {
+          "inning1": {
+            "score": 275,
+            "wickets": 7,
+            "overs": 83,
+            "runRate": 3.31
+          }
+        }
+      },
+      "coverage": 3,
+      "time": {},
+      "changes": {
+        "changes": [
+          "status.code",
+          "status.description"
+        ],
+        "changeTimestamp": 1737286577
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 13262461,
+      "endTimestamp": 1737376200,
+      "startTimestamp": 1737174600,
+      "slug": "nugegoda-sports-welfare-club-moors-sports-club",
+      "periods": {
+        "current": "Match",
+        "inning1": "1st Inning",
+        "inning2": "2nd Inning",
+        "inning3": "3rd Inning",
+        "inning4": "4th Inning"
+      },
+      "finalResultOnly": true,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "Major League Tournament, Group A",
+        "slug": "major-league-tournament-group-a",
+        "category": {
+          "name": "Sri Lanka",
+          "slug": "sri-lanka",
+          "sport": {
+            "name": "Cricket",
+            "slug": "cricket",
+            "id": 62
+          },
+          "id": 1356,
+          "country": {
+            "alpha2": "LK",
+            "alpha3": "LKA",
+            "name": "Sri Lanka",
+            "slug": "sri-lanka"
+          },
+          "flag": "sri-lanka",
+          "alpha2": "LK"
+        },
+        "uniqueTournament": {
+          "name": "Premier Trophy",
+          "slug": "premier-trophy",
+          "category": {
+            "name": "Sri Lanka",
+            "slug": "sri-lanka",
+            "sport": {
+              "name": "Cricket",
+              "slug": "cricket",
+              "id": 62
+            },
+            "id": 1356,
+            "country": {
+              "alpha2": "LK",
+              "alpha3": "LKA",
+              "name": "Sri Lanka",
+              "slug": "sri-lanka"
+            },
+            "flag": "sri-lanka",
+            "alpha2": "LK"
+          },
+          "userCount": 26,
+          "id": 19200,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 105894
+      },
+      "season": {
+        "name": "Major League Tournament, 2024/25",
+        "year": "2024/2025",
+        "editor": false,
+        "id": 70144
+      },
+      "customId": "qDqdszDqd",
+      "status": {
+        "code": 80,
+        "description": "Interrupted",
+        "type": "interrupted"
+      },
+      "homeTeam": {
+        "name": "Bloomfield Cricket and Athletic Club",
+        "slug": "bloomfield-cricket-and-athletic-club",
+        "shortName": "BAC",
+        "gender": "M",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 42,
+        "nameCode": "BCA",
+        "national": false,
+        "type": 0,
+        "id": 416416,
+        "country": {},
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Chilaw Marians Cricket Club",
+        "slug": "chilaw-marians-cricket-club",
+        "shortName": "CMC",
+        "gender": "M",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 12,
+        "nameCode": "CMC",
+        "national": false,
+        "type": 0,
+        "id": 416424,
+        "country": {},
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
+      "coverage": 3,
+      "time": {},
+      "changes": {
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.innings",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.innings"
+        ],
+        "changeTimestamp": 1737286701
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 13262457,
+      "endTimestamp": 1737459000,
+      "startTimestamp": 1737261000,
+      "slug": "chilaw-marians-cricket-club-bloomfield-cricket-and-athletic-club",
+      "periods": {
+        "current": "Match",
+        "inning1": "1st Inning",
+        "inning2": "2nd Inning",
+        "inning3": "3rd Inning",
+        "inning4": "4th Inning"
+      },
+      "finalResultOnly": true,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "England U19s in South Africa, 3 Youth ODI Series",
+        "slug": "england-u19s-in-south-africa-3-youth-odi-series",
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Cricket",
+            "slug": "cricket",
+            "id": 62
+          },
+          "id": 1343,
+          "country": {},
+          "flag": "international"
+        },
+        "uniqueTournament": {
+          "name": "One Day International U19",
+          "slug": "one-day-international-u19",
+          "category": {
+            "name": "World",
+            "slug": "world",
+            "sport": {
+              "name": "Cricket",
+              "slug": "cricket",
+              "id": 62
+            },
+            "id": 1343,
+            "country": {},
+            "flag": "international"
+          },
+          "userCount": 156,
+          "hasPerformanceGraphFeature": false,
+          "id": 11325,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "مباراة دولية لوان داي تحت 19 سنة",
+              "hi": "वन डे इंटरनेशनल अंडर-19",
+              "bn": "ওয়ান ডে ইন্টারন্যাশনাল আন্ডার19"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 143864
+      },
+      "season": {
+        "name": "2025",
+        "year": "2025",
+        "editor": false,
+        "id": 70425
+      },
+      "customId": "amKbshmKb",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "South Africa Under-19",
+        "slug": "south-africa-under-19",
+        "shortName": "SA-U19",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 404,
+        "nameCode": "SAU",
+        "national": true,
+        "type": 0,
+        "id": 213100,
+        "country": {
+          "alpha2": "ZA",
+          "alpha3": "ZAF",
+          "name": "South Africa",
+          "slug": "south-africa"
+        },
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "جنوب أفريقيا دون 19 سنة",
+            "hi": "साउथ अफ्रीका अंडर 19",
+            "bn": "দক্ষিণ আফ্রিকা আন্ডার-19"
+          },
+          "shortNameTranslation": {
+            "ar": "جنوب أفريقيا دون 19 سنة",
+            "hi": "एसए- अंडर 19",
+            "bn": "এসএ-আন্ডার19"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "England Under-19",
+        "slug": "england-under-19",
+        "shortName": "ENG-U19",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 265,
+        "nameCode": "EUN",
+        "national": true,
+        "type": 0,
+        "id": 213107,
+        "country": {},
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إنجلترا دون 19 سنة",
+            "hi": "इंग्लैंड अंडर 19",
+            "bn": "ইংল্যান্ড আন্ডার-19"
+          },
+          "shortNameTranslation": {
+            "ar": "إنجلترا دون 19 سنة",
+            "hi": "ईएनजी- अंडर 19",
+            "bn": "ইএনজি-আন্ডার19"
+          }
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "coverage": 2,
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 13296783,
+      "endTimestamp": 1737561600,
+      "startTimestamp": 1737532800,
+      "slug": "england-under-19-south-africa-under-19",
+      "periods": {
+        "current": "Match",
+        "inning1": "1st Inning",
+        "inning2": "2nd Inning",
+        "inning3": "3rd Inning",
+        "inning4": "4th Inning"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "Bangladesh Women in West Indies, 3 ODI Series",
+        "slug": "bangladesh-women-in-west-indies-3-odi-series",
+        "category": {
+          "name": "World",
+          "slug": "world",
+          "sport": {
+            "name": "Cricket",
+            "slug": "cricket",
+            "id": 62
+          },
+          "id": 1343,
+          "country": {},
+          "flag": "international"
+        },
+        "uniqueTournament": {
+          "name": "ICC Women's Championship",
+          "slug": "icc-womens-championship",
+          "category": {
+            "name": "World",
+            "slug": "world",
+            "sport": {
+              "name": "Cricket",
+              "slug": "cricket",
+              "id": 62
+            },
+            "id": 1343,
+            "country": {},
+            "flag": "international"
+          },
+          "userCount": 284,
+          "hasPerformanceGraphFeature": false,
+          "id": 18793,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 143930
+      },
+      "season": {
+        "name": "2025",
+        "year": "2025",
+        "editor": false,
+        "id": 62931
+      },
+      "customId": "jgAbsvmKb",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "West Indies Women",
+        "slug": "west-indies-women",
+        "shortName": "WI-W",
+        "gender": "F",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 846,
+        "nameCode": "WIW",
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "id": 213120,
+        "country": {},
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "نساء جزر الهند الغربية",
+            "hi": "वेस्ट इंडीज विमेन",
+            "bn": "ওয়েস্ট ইন্ডিজ উইমেন"
+          },
+          "shortNameTranslation": {
+            "ar": "نساء جزر الهند الغربية",
+            "hi": "डब्ल्यूआई-डब्ल्यू",
+            "bn": "ডব্লিউ-ডব্লিউ"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Bangladesh Women",
+        "slug": "bangladesh",
+        "shortName": "BAN-W",
+        "gender": "F",
+        "sport": {
+          "name": "Cricket",
+          "slug": "cricket",
+          "id": 62
+        },
+        "userCount": 2019,
+        "nameCode": "BWO",
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "id": 187809,
+        "country": {
+          "alpha2": "BD",
+          "alpha3": "BGD",
+          "name": "Bangladesh",
+          "slug": "bangladesh"
+        },
+        "entityType": "team",
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "بنغلادش",
+            "hi": "बांग्लादेश",
+            "bn": "বাংলাদেশ"
+          },
+          "shortNameTranslation": {
+            "ar": "بنغلادش",
+            "hi": "बीएएन-डब्ल्यू",
+            "bn": "বিএএন-ডব্লিউ"
+          }
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "coverage": 1,
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 13301377,
+      "endTimestamp": 1737511200,
+      "startTimestamp": 1737482400,
+      "slug": "west-indies-women-bangladesh-women",
+      "periods": {
+        "current": "Match",
+        "inning1": "1st Inning",
+        "inning2": "2nd Inning",
+        "inning3": "3rd Inning",
+        "inning4": "4th Inning"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false
+    }
+  ]
+}

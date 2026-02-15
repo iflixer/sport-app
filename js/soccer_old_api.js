@@ -1,6 +1,6 @@
 
 // FOOTBALL API
-const apikey = '6b595851d5eefee94b1a6113b126e089';
+const apikey = '872bea0ad002dbf9150777624727892b';
 const apibase = 'https://v3.football.api-sports.io';
 const apihost = 'v3.football.api-sports.io';
 var betters_list = [8, 11, 32];

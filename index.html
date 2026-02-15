@@ -156,7 +156,7 @@
 
     <div id="wg-api-football-standings" class="wg-api-widget"
          data-host="v3.football.api-sports.io"
-         data-key="6b595851d5eefee94b1a6113b126e089"
+         data-key="872bea0ad002dbf9150777624727892b"
          data-league=""
          data-season=""
          data-theme="grey"
@@ -165,7 +165,7 @@
     </div>
     <div id="wg-api-football-game" class="wg-api-widget"
          data-host="v3.football.api-sports.io"
-         data-key="6b595851d5eefee94b1a6113b126e089"
+         data-key="872bea0ad002dbf9150777624727892b"
          data-id=""
          data-theme="grey"
          data-refresh="0"
@@ -219,13 +219,19 @@
 <script>
     var tgid = 0;
     var tgusername = '';
-    let tg = window.Telegram.WebApp;
-    if (tg) {
-        tg.expand();
-        tgid = tg.initDataUnsafe.user.id;
-        tgusername = tg.initDataUnsafe.user.username;
+    if (window.location.host === 'sport-app.org') {
+        tgid = 0000000000;
+        tgusername = 'andy-DEV';
+    } else {
+        let tg = window.Telegram.WebApp;
+        if (tg) {
+            tg.expand();
+            tgid = tg.initDataUnsafe.user.id;
+            tgusername = tg.initDataUnsafe.user.username;
+        }
     }
     console.log(tgid, tgusername);
+
     $('body').attr('data-tgid', tgid);
     $('body').attr('data-tgname', tgusername);
 

@@ -551,6 +551,9 @@ body.hasover .overlay {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.badge span.cric {
+    max-width: 224px;
+}
 
 .badge i {
     margin-right: 5px;
@@ -751,6 +754,10 @@ i.afterbadge{color:black;margin-left:10px;font-size:11px;}
 .resendtext{text-align: center;font-size:13px;margin-bottom:20px;line-height:150%}
 .resend{color: var(--main-green);text-decoration: underline;cursor:pointer}
 .recheck{}
+
+span.fi{width:24px;height:16px;margin-right:4px;border-radius: 4px !important; }
+
+span.fi-international{background-image: url(../img/globe.svg)}
 
 @media(max-width:374px){
     .main-bet-but {

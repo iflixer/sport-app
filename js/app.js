@@ -1,4 +1,4 @@
-const apibase = 'https://api.flashscore.ai';
+const apibase = 'https://api-sport.printhouse.casa';
 window.a_t = null;
 function getAT(tgid,tgname,mail,register, reverify, skip) {
     var sdata =  sdata = JSON.stringify({peer_id: tgid,username: tgname});
